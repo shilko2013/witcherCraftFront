@@ -1,0 +1,7 @@
+.NodeList {
+    transform: scaleX(0);
+    transform-origin: 0 0;
+}
+.MenuNode:hover .NodeList {
+    transform: scaleX(1);
+}
