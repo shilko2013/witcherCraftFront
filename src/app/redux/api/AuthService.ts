@@ -51,6 +51,7 @@ function register(username: any, password: any, email: any) {
 }
 
 async function reducer(state = {role: "", error: ""}, action: any) {
+    console.log(action);
     switch (action.type) {
         case AuthActions.AUTH_LOGIN:
             try {
@@ -83,6 +84,7 @@ async function reducer(state = {role: "", error: ""}, action: any) {
                     error: 'Не удалось выполнить запрос!'
                 };
             }
+        default: return state;
     }
 }
 
