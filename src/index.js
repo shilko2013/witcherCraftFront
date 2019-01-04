@@ -4,7 +4,12 @@ import './index.css';
 import App from './app/App';
 import * as serviceWorker from './serviceWorker';
 import {Provider} from 'react-redux';
-import {store} from './app/redux/storeManager';
+import {combineReducers, createStore} from "redux";
+import {authReducer} from './app/reducers/AuthReducer';
+
+const store = createStore(combineReducers({
+    auth: authReducer
+}));
 
 ReactDOM.render(
     <Provider store={store}>
