@@ -27,7 +27,7 @@ class LoginNode extends Component {
                 responseType: 'text'
             }).then((response) => {
                 if (response.status === 200) {
-                    login(response.headers.role);
+                    this.props.login(response.headers.role);
                     console.log(response.headers.role);
                     this.setState({
                         ...this.state,
@@ -35,7 +35,7 @@ class LoginNode extends Component {
                     });
                 } else throw Error('error');
             }).catch((error) => {
-                if (error.response.status === 401) {
+                if (error.response && error.response.status === 401) {
                     this.setState({
                         ...this.state,
                         error: 'Неверный логин или пароль, повторите ввод!'
@@ -61,10 +61,10 @@ class LoginNode extends Component {
                     this.setState({
                         ...this.state,
                         error: 'Вы успешно зарегестрированы!'
-                    })
+                    });
                 else throw Error('error');
             }).catch((error) => {
-                if (error.response.status === 400) {
+                if (error.response && error.response.status === 400) {
                     let errorReason;
                     switch (error.response.data) {
                         case "Size username":
@@ -103,7 +103,7 @@ class LoginNode extends Component {
                     ...this.state,
                     error: 'Похоже на сервере неполадки, пожалуйста, повторите попытку позже!'
                 });
-            });;
+            });
         }
     };
 

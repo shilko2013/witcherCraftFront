@@ -11,30 +11,26 @@ import LoginNode from "./LoginNode/LoginNode";
 class AsideMenu extends Component {
 
     isLogin = () => {
-        return this.state.role !== "";
+        return this.props.role !== "";
     };
 
     isAdmin = () => {
-        return this.state.role === "USER_STATUS_ADMIN";
+        return this.props.role === "USER_STATUS_ADMIN";
     };
 
     isEditor = () => {
-        return this.state.role === "USER_STATUS_ADMIN"
-            || this.state.role === "USER_STATUS_EDITOR";
+        return this.props.role === "USER_STATUS_ADMIN"
+            || this.props.role === "USER_STATUS_EDITOR";
     };
 
     isReader = () => {
-        return this.state.role === "USER_STATUS_ADMIN"
-            || this.state.role === "USER_STATUS_EDITOR"
-            || this.state.role === "USER_STATUS_READER";
+        return this.props.role === "USER_STATUS_ADMIN"
+            || this.props.role === "USER_STATUS_EDITOR"
+            || this.props.role === "USER_STATUS_READER";
     };
 
     constructor(props) {
         super(props);
-        this.state = {
-            role: props.role,
-            error: ''
-        }
     }
 
     render() {
@@ -68,6 +64,5 @@ class AsideMenu extends Component {
 export default connect(
     state => ({
         role: state.auth.role,
-    }),
-    dispatch => ({})
+    })
 )(AsideMenu);
