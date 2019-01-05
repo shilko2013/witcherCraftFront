@@ -6,7 +6,6 @@ import searchImg from '../../resources/images/searchImg.bmp';
 import loginImg from '../../resources/images/loginImage.bmp';
 import CraftRef from "./CraftRef/CraftRef";
 import connect from "react-redux/es/connect/connect";
-import {login} from '../../actions/AuthActions';
 import LoginNode from "./LoginNode/LoginNode";
 
 class AsideMenu extends Component {
