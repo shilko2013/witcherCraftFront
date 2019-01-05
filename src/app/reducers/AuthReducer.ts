@@ -8,6 +8,11 @@ export function authReducer(state = {role: ""}, action: any) {
                         ...state,
                         role: action.role
                     };
+        case AuthActions.AUTH_LOGOUT:
+            return {
+                ...state,
+                role: ''
+            };
         default: return state;
     }
 }

@@ -116,7 +116,10 @@ class LoginNode extends Component {
                 <div className="nodeText">
                     {this.state.text}
                 </div>
-                <div className="LoginForm">
+                <form className="LoginForm" onSubmit={(event)=>{
+                    event.preventDefault();
+                    this.loginOrRegister();
+                }}>
                     <label htmlFor="username">Логин: </label>
                     <input onChange={(event) => {
                         this.setState({...this.state, username: event.target.value})
@@ -136,19 +139,19 @@ class LoginNode extends Component {
                     <span className="errorDiv">
                         {this.state.error}
                     </span>
-                    <button onClick={this.loginOrRegister}>{this.state.isLoginForm ? "Войти" : "Зарегестрироваться"}</button>
+                    <button type="submit">{this.state.isLoginForm ? "Войти" : "Зарегестрироваться"}</button>
                     <button onClick={() => {
                         this.setState({...this.state, isLoginForm: !this.state.isLoginForm})
                     }}>
                         {this.state.isLoginForm ? "Еще не зарегестрированы?" : "Уже зарегестрированы?"}
                     </button>
-                </div>
+                </form>
             </div>
         )
     }
 }
 
-export default  connect(
+export default connect(
     state => ({
         role: state.auth.role,
     }),

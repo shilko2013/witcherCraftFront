@@ -7,11 +7,12 @@ import loginImg from '../../resources/images/loginImage.bmp';
 import CraftRef from "./CraftRef/CraftRef";
 import connect from "react-redux/es/connect/connect";
 import LoginNode from "./LoginNode/LoginNode";
+import LogoutNode from "./LogoutNode/LogoutNode";
 
 class AsideMenu extends Component {
 
     isLogin = () => {
-        return this.props.role !== "";
+        return this.isReader();
     };
 
     isAdmin = () => {
@@ -39,14 +40,14 @@ class AsideMenu extends Component {
             <aside className="AsideMenu">
                 <div className="top">
                     <LogoRef/>
-                    <MenuNode text="Поиск" src={searchImg}/>
                     {!this.isLogin() &&
                     <LoginNode text="Войти/зарегестрироваться" src={loginImg}/>
                     }
                     {this.isLogin() &&
-                    <MenuNode text="Выйти" src={loginImg}/>
+                    <LogoutNode text="Выйти" src={loginImg}/>
                     }
-                    <MenuNode text="Алхимия" nodes={["Ингридиенты", "Чертежи", "Предметы"]}/>
+                    <MenuNode text="Алхимия" nodes={["Ингридиенты", "Рецепты", "Предметы"]}/>
+                    <MenuNode text="Ремесло" nodes={["Компоненты", "Чертежи", "Предметы"]}/>
                     <CraftRef/>
                 </div>
                 <div className="bottom">
