@@ -1,0 +1,28 @@
+.LoginForm {
+    display: none;
+    border: 2px solid #333740;
+    background: #282c34;
+}
+
+.LoginForm button {
+    background: #5e6873;
+    color: #c4c4c4;
+}
+
+.buttonDiv {
+    align-content: center;
+}
+
+@media only screen and (min-width: 800px) {
+    .LoginForm {
+        position: absolute;
+    }
+}
+
+.clicked {
+    display: block;
+}
+
+img {
+    float: left;
+}

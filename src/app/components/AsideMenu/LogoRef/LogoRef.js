@@ -11,7 +11,7 @@ class LogoRef extends Component {
         return (
             <div className="LogoRef">
                 <img
-                    id={logo}
+                    id="logo"
                     src={logo}
                     alt="logo"
                 />

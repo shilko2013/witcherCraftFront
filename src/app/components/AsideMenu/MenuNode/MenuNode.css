@@ -5,3 +5,6 @@
 .MenuNode:hover .NodeList {
     transform: scaleX(1);
 }
+img {
+    float: left;
+}

@@ -13,7 +13,9 @@ class LoginNode extends Component {
             username: '',
             password: '',
             email: '',
-            error: ''
+            error: '',
+            text: this.props.text,
+            wasClicked: ''
         };
     }
 
@@ -110,13 +112,21 @@ class LoginNode extends Component {
     render() {
         return (
             <div className="LoginNode">
-                <img
-                    src={this.state.src || defaultImg}
-                    alt=""/>
-                <div className="nodeText">
-                    {this.state.text}
+                <div className="textPart" onClick={() => {
+                    this.setState({
+                        ...this.state,
+                        wasClicked: this.state.wasClicked === '' ? 'clicked' : ''
+                    });
+                }}>
+                    <img
+                        src={this.state.src || defaultImg}
+                        alt=""/>
+                    <div className="nodeText">
+                        {this.state.text}
+                    </div>
                 </div>
-                <form className="LoginForm" onSubmit={(event)=>{
+                <br/>
+                <form className={'LoginForm ' + this.state.wasClicked} onSubmit={(event) => {
                     event.preventDefault();
                     this.loginOrRegister();
                 }}>
@@ -124,27 +134,34 @@ class LoginNode extends Component {
                     <input onChange={(event) => {
                         this.setState({...this.state, username: event.target.value})
                     }} type="text" id="username"/>
+                    <br/>
                     <label htmlFor="password">Пароль: </label>
                     <input onChange={(event) => {
                         this.setState({...this.state, password: event.target.value})
                     }} type="password" id="password"/>
+                    <br/>
                     {!this.state.isLoginForm &&
-                    <label htmlFor="email">Email: </label>
-                    }
-                    {!this.state.isLoginForm &&
-                    <input onChange={(event) => {
-                        this.setState({...this.state, email: event.target.value})
-                    }} type="text" id="email"/>
+                    <div>
+                        <label htmlFor="email">Email: </label>
+                        <input onChange={(event) => {
+                            this.setState({...this.state, email: event.target.value})
+                        }} type="text" id="email"/>
+                        <br/>
+                    </div>
                     }
                     <span className="errorDiv">
                         {this.state.error}
                     </span>
-                    <button type="submit">{this.state.isLoginForm ? "Войти" : "Зарегестрироваться"}</button>
-                    <button onClick={() => {
-                        this.setState({...this.state, isLoginForm: !this.state.isLoginForm})
-                    }}>
-                        {this.state.isLoginForm ? "Еще не зарегестрированы?" : "Уже зарегестрированы?"}
-                    </button>
+                    <div className="buttonDiv">
+                        <button type="submit">{this.state.isLoginForm ? "Войти" : "Зарегестрироваться"}</button>
+                        <br/>
+                        <button onClick={(event) => {
+                            event.preventDefault();
+                            this.setState({...this.state, isLoginForm: !this.state.isLoginForm})
+                        }}>
+                            {this.state.isLoginForm ? "Еще не зарегестрированы?" : "Уже зарегестрированы?"}
+                        </button>
+                    </div>
                 </form>
             </div>
         )

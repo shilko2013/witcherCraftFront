@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import './AsideMenu.css';
 import LogoRef from "./LogoRef/LogoRef";
 import MenuNode from "./MenuNode/MenuNode";
-import searchImg from '../../resources/images/searchImg.bmp';
 import loginImg from '../../resources/images/loginImage.bmp';
 import CraftRef from "./CraftRef/CraftRef";
 import connect from "react-redux/es/connect/connect";

@@ -1,0 +1,24 @@
+.AsideMenu {
+    float: left;
+    background: #191d22;
+    color: #a7a7a7;
+    height: 100vh;
+    position: relative;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+@media only screen and (min-width: 800px) {
+    .AsideMenu {
+        width: 200px;
+    }
+
+    .AsideMenu img {
+        width: auto;
+        height: auto;
+    }
+}
