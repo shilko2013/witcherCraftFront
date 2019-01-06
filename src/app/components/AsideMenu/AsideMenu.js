@@ -40,7 +40,7 @@ class AsideMenu extends Component {
                 <div className="top">
                     <LogoRef/>
                     {!this.isLogin() &&
-                    <LoginNode text="Войти/зарегестрироваться" src={loginImg}/>
+                    <LoginNode text="Войти/зарегистрироваться" src={loginImg}/>
                     }
                     {this.isLogin() &&
                     <LogoutNode text="Выйти" src={loginImg}/>

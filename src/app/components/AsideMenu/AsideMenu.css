@@ -6,12 +6,6 @@
     position: relative;
 }
 
-.bottom {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
-
 @media only screen and (min-width: 800px) {
     .AsideMenu {
         width: 200px;
@@ -21,4 +15,8 @@
         width: auto;
         height: auto;
     }
+}
+
+.textPart:hover {
+    color: #f9f9f9;
 }

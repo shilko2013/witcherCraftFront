@@ -5,32 +5,35 @@ import connect from "react-redux/es/connect/connect";
 import {logout} from "../../../actions/AuthActions";
 
 class LogoutNode extends Component {
-  constructor(props){
-    super(props);
-    this.state = {
-      src: props.src,
-      text: props.text
+    constructor(props) {
+        super(props);
+        this.state = {
+            src: props.src,
+            text: props.text
+        }
     }
-  }
-  render(){
-    return (
-        <div className="MenuNode">
-          <img
-              src={this.state.src || defaultImg}
-              alt=""/>
-          <div className="nodeText unselectable" onClick={this.props.logout}>
-            {this.state.text}
-          </div>
-        </div>
-    )
-  }
+
+    render() {
+        return (
+            <div className="MenuNode">
+                <div className="textPart">
+                    <img
+                        src={this.state.src || defaultImg}
+                        alt=""/>
+                    <div className="nodeText unselectable" onClick={this.props.logout}>
+                        {this.state.text}
+                    </div>
+                </div>
+            </div>
+        )
+    }
 }
 
 export default connect(
     state => ({}),
     dispatch => ({
-      logout: () => {
-        dispatch(logout());
-      }
+        logout: () => {
+            dispatch(logout());
+        }
     })
 )(LogoutNode);

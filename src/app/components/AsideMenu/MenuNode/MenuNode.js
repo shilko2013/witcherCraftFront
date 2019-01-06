@@ -16,11 +16,13 @@ class MenuNode extends Component {
     render() {
         return (
             <div className="MenuNode">
-                <img
-                    src={this.state.src || defaultImg}
-                    alt=""/>
-                <div className="nodeText unselectable">
-                    {this.state.text}
+                <div className="textPart">
+                    <img
+                        src={this.state.src || defaultImg}
+                        alt=""/>
+                    <div className="nodeText unselectable">
+                        {this.state.text}
+                    </div>
                 </div>
                 {this.state.nodes &&
                 <NodeList nodes={this.state.nodes}/>

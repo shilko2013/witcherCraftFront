@@ -9,15 +9,17 @@
     cursor: pointer;
 }
 
-.textPart:hover {
-    background: #5e6873;
-}
-
 .LoginForm button {
     background: #5e6873;
     color: #c4c4c4;
     width: 100%;
     margin: 10px 0 0 0;
+    cursor: pointer;
+}
+
+.LoginForm button:hover {
+    background: #90a1ac;
+    color: #ffffff;
 }
 
 .buttonDiv {
