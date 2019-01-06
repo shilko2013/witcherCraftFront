@@ -18,7 +18,7 @@ class LogoutNode extends Component {
           <img
               src={this.state.src || defaultImg}
               alt=""/>
-          <div className="nodeText" onClick={this.props.logout}>
+          <div className="nodeText unselectable" onClick={this.props.logout}>
             {this.state.text}
           </div>
         </div>

@@ -2,11 +2,22 @@
     display: none;
     border: 2px solid #333740;
     background: #282c34;
+    padding: 10px 10px 10px 10px;
+}
+
+.textPart {
+    cursor: pointer;
+}
+
+.textPart:hover {
+    background: #5e6873;
 }
 
 .LoginForm button {
     background: #5e6873;
     color: #c4c4c4;
+    width: 100%;
+    margin: 10px 0 0 0;
 }
 
 .buttonDiv {
@@ -14,13 +25,19 @@
 }
 
 @media only screen and (min-width: 800px) {
-    .LoginForm {
+    .clicked {
         position: absolute;
+        display: block;
+        left: 100%;
+        top: 200px;
     }
 }
 
-.clicked {
-    display: block;
+@media only screen and (max-width: 800px) {
+    .clicked {
+        position: absolute;
+        display: block;
+    }
 }
 
 img {

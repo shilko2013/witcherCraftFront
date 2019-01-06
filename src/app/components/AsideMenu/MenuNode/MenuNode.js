@@ -19,7 +19,7 @@ class MenuNode extends Component {
                 <img
                     src={this.state.src || defaultImg}
                     alt=""/>
-                <div className="nodeText">
+                <div className="nodeText unselectable">
                     {this.state.text}
                 </div>
                 {this.state.nodes &&

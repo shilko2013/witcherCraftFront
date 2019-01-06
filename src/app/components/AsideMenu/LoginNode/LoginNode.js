@@ -17,7 +17,22 @@ class LoginNode extends Component {
             text: this.props.text,
             wasClicked: ''
         };
+        document.addEventListener('click', this.handleClickOutside, false);
     }
+
+    componentWillUnmount() {
+        document.removeEventListener('click', this.handleClickOutside, false);
+    }
+
+    handleClickOutside = (event) => {
+        const LoginNodeElement = document.getElementsByClassName('LoginNode')[0];
+        if (!event.path.includes(LoginNodeElement)) {
+            this.setState({
+                ...this.state,
+                wasClicked: ''
+            })
+        }
+    };
 
     loginOrRegister = () => {
         if (this.state.isLoginForm) {
@@ -29,12 +44,14 @@ class LoginNode extends Component {
                 responseType: 'text'
             }).then((response) => {
                 if (response.status === 200) {
-                    this.props.login(response.headers.role);
-                    console.log(response.headers.role);
                     this.setState({
                         ...this.state,
                         error: 'Вы успешно вошли в систему!'
                     });
+                    setTimeout(() => {
+                        this.props.login(response.headers.role);
+                        console.log(response.headers.role);
+                    }, 1500);
                 } else throw Error('error');
             }).catch((error) => {
                 if (error.response && error.response.status === 401) {
@@ -121,7 +138,7 @@ class LoginNode extends Component {
                     <img
                         src={this.state.src || defaultImg}
                         alt=""/>
-                    <div className="nodeText">
+                    <div className="nodeText unselectable">
                         {this.state.text}
                     </div>
                 </div>
@@ -157,7 +174,11 @@ class LoginNode extends Component {
                         <br/>
                         <button onClick={(event) => {
                             event.preventDefault();
-                            this.setState({...this.state, isLoginForm: !this.state.isLoginForm})
+                            this.setState({
+                                ...this.state,
+                                isLoginForm: !this.state.isLoginForm,
+                                error: ''
+                            })
                         }}>
                             {this.state.isLoginForm ? "Еще не зарегестрированы?" : "Уже зарегестрированы?"}
                         </button>
