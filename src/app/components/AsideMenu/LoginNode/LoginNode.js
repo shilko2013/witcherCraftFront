@@ -15,7 +15,8 @@ class LoginNode extends Component {
             email: '',
             error: '',
             text: this.props.text,
-            wasClicked: ''
+            wasClicked: '',
+            src: props.src
         };
         document.addEventListener('click', this.handleClickOutside, false);
     }

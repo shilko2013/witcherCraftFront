@@ -8,7 +8,9 @@
     "react-dom": "^16.7.0",
     "react-redux": "latest",
     "react-scripts": "2.1.2",
-    "redux": "4.0.1"
+    "redux": "4.0.1",
+    "react-router-dom": "latest",
+    "react-yandex-metrika": "latest"
   },
   "scripts": {
     "start": "react-scripts start",

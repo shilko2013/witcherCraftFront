@@ -1,10 +1,44 @@
-.NodeList {
-    transform: scaleX(0);
-    transform-origin: 0 0;
-}
-.MenuNode:hover .NodeList {
-    transform: scaleX(1);
-}
 img {
     float: left;
+}
+
+.MenuNode {
+    height: 50px;
+    width: 200px;
+    background: #191d22;
+}
+
+.nodeText {
+    height: 50px;
+}
+
+.listPart {
+    position: relative;
+    display: none;
+}
+
+@media only screen and (min-width: 800px) {
+    .listPart {
+        left: 200px;
+        bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .listPart {
+
+    }
+}
+
+.MenuNode:hover .listPart {
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    color: #a7a7a7;
+}
+
+a:hover {
+    color: #f9f9f9;
 }

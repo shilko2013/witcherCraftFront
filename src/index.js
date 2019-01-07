@@ -6,6 +6,7 @@ import * as serviceWorker from './serviceWorker';
 import {Provider} from 'react-redux';
 import {combineReducers, createStore} from "redux";
 import {authReducer} from './app/reducers/AuthReducer';
+import {BrowserRouter} from 'react-router-dom';
 
 const store = createStore(combineReducers({
     auth: authReducer
@@ -17,7 +18,9 @@ store.subscribe(() => {
 
 ReactDOM.render(
     <Provider store={store}>
-        <App/>
+        <BrowserRouter>
+            <App/>
+        </BrowserRouter>
     </Provider>
     , document.getElementById('root'));
 

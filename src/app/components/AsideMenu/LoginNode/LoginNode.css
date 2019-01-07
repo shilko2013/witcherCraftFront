@@ -3,10 +3,15 @@
     border: 2px solid #333740;
     background: #282c34;
     padding: 10px 10px 10px 10px;
+    position: absolute;
 }
 
 .textPart {
     cursor: pointer;
+}
+
+.LoginNode {
+    height: 50px;
 }
 
 .LoginForm button {
@@ -28,7 +33,6 @@
 
 @media only screen and (min-width: 800px) {
     .clicked {
-        position: absolute;
         display: block;
         left: 100%;
         top: 200px;
@@ -37,8 +41,8 @@
 
 @media only screen and (max-width: 800px) {
     .clicked {
-        position: absolute;
         display: block;
+        top: 250px;
     }
 }
 

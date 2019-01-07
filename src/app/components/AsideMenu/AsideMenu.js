@@ -7,6 +7,7 @@ import CraftRef from "./CraftRef/CraftRef";
 import connect from "react-redux/es/connect/connect";
 import LoginNode from "./LoginNode/LoginNode";
 import LogoutNode from "./LogoutNode/LogoutNode";
+import {ACCOUNT_NUMBER, AMOUNT, COMMENT, ID_YANDEX_METRIKA} from "../../resources/ExternalResources";
 
 class AsideMenu extends Component {
 
@@ -45,16 +46,31 @@ class AsideMenu extends Component {
                     {this.isLogin() &&
                     <LogoutNode text="Выйти" src={loginImg}/>
                     }
-                    <MenuNode text="Алхимия" nodes={["Ингридиенты", "Рецепты", "Предметы"]}/>
-                    <MenuNode text="Ремесло" nodes={["Компоненты", "Чертежи", "Предметы"]}/>
+                    <MenuNode text="Алхимия"
+                              nodes={["Ингридиенты", "Рецепты", "Предметы"]}
+                              nodeHrefs={["1", "2", "3"]}/>
+                    <MenuNode text="Ремесло"
+                              nodes={["Компоненты", "Чертежи", "Предметы"]}
+                              nodeHrefs={["4", "5", "6"]}/>
                     <CraftRef/>
                 </div>
                 <div className="bottom">
                     {this.isAdmin() &&
-                    <MenuNode text="Панель управления" src={loginImg}/>
+                    <MenuNode text="Панель управления"
+                              href="/admin"/>
                     }
-                    <MenuNode text="Сделать пожертвование" src={loginImg}/>
-                    <MenuNode text="Аналитика сайта" src={loginImg}/>
+                    <MenuNode text="Сделать пожертвование"
+                              isExternal={true}
+                              href={
+                                  "https://qiwi.com/payment/form/" +
+                                  "99?extra%5B%27account%27%5D=" + ACCOUNT_NUMBER +
+                                  "&amountInteger=" + AMOUNT +
+                                  "&extra%5B%27comment%27%5D=" + COMMENT +
+                                  "&currency=643&blocked[0]=account&blocked[1]=comment"
+                              }/>
+                    <MenuNode text="Аналитика сайта"
+                              isExternal={true}
+                              href={"https://metrika.yandex.ru/dashboard?id="+ID_YANDEX_METRIKA}/>
                 </div>
             </aside>
         )

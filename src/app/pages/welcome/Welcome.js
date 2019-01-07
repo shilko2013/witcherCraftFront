@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import './Welcome.css';
-import AsideMenu from "../../components/AsideMenu/AsideMenu";
 
 class Welcome extends Component {
   constructor(props){
@@ -9,7 +8,6 @@ class Welcome extends Component {
   render(){
     return (
       <div className="Welcome">
-        <AsideMenu/>
           <h1>Article info</h1>
           Куча текста текста текста текста текста текста текста <br/>
           Куча текста текста текста текста текста текста текста <br/>
