@@ -61,6 +61,7 @@
 }
 
 .buttonMenuIsHidden {
+    transform: rotate3d(0.5,0.5,0.5,360deg);
     background: #5e6873;
     left: 0;
 }
