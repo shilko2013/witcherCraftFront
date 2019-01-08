@@ -56,7 +56,8 @@ class MenuNode extends Component {
                                 src={this.state.src || defaultImg}
                                 alt=""/>
                             < div className="nodeText unselectable">
-                                {this.state.text}
+                                {this.state.text+' '}
+                                <span className="triangle">⚔</span>
                             </div>
                         </div>
                     }
@@ -65,7 +66,8 @@ class MenuNode extends Component {
                     {this.state.nodes &&
                     <div>
                         {
-                            this.state.nodes.map((elem, index) => <MenuNode text={elem}
+                            this.state.nodes.map((elem, index) => <MenuNode key={elem}
+                                                                            text={elem}
                                                                             href={this.state.nodeHrefs[index]}
                                                                             src={this.state.nodeImgs && (this.state.nodeImgs[index] || defaultImg)}/>)
                         }

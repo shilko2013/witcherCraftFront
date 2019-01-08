@@ -1,3 +1,18 @@
 h1 {
     margin: 0 0 10px;
 }
+
+.Welcome {
+    height: 100vh;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+    position: relative;
+    top: 10px;
+    left: 210px;
+}
+
+.Welcome::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}

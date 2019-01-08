@@ -32,7 +32,26 @@ class AsideMenu extends Component {
 
     constructor(props) {
         super(props);
+        this.state = {
+            windowWidth: 0,
+            windowsHeight: 0,
+            isShow: true
+        };
+        this.updateWindowDimensions();
     }
+
+    componentDidMount() {
+        this.updateWindowDimensions();
+        window.addEventListener('resize', this.updateWindowDimensions);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.updateWindowDimensions);
+    }
+
+    updateWindowDimensions= () => {
+        this.setState({ windowWidth: window.innerWidth, windowsHeight: window.innerHeight });
+    };
 
     render() {
         console.log(this.props);
@@ -41,7 +60,7 @@ class AsideMenu extends Component {
                 <div className="top">
                     <LogoRef/>
                     {!this.isLogin() &&
-                    <LoginNode text="Войти/зарегистрироваться" src={loginImg}/>
+                    <LoginNode text="Вход/регистрация" src={loginImg}/>
                     }
                     {this.isLogin() &&
                     <LogoutNode text="Выйти" src={loginImg}/>

@@ -9,7 +9,7 @@ import {ID_YANDEX_METRIKA} from "./resources/ExternalResources";
 class App extends Component {
   render() {
     return (
-        <div>
+        <div className="rootApp">
             <YMInitializer accounts={[ID_YANDEX_METRIKA]} />
         <AsideMenu/>
             <Switch>

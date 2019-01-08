@@ -12,6 +12,8 @@
 
 .LoginNode {
     height: 50px;
+    text-align: center;
+    border: 1px solid #c4c4c4;
 }
 
 .LoginForm button {
@@ -31,19 +33,9 @@
     align-content: center;
 }
 
-@media only screen and (min-width: 800px) {
-    .clicked {
-        display: block;
-        left: 100%;
-        top: 200px;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    .clicked {
-        display: block;
-        top: 250px;
-    }
+.clicked {
+    display: block;
+    top: 250px;
 }
 
 img {

@@ -1,21 +1,34 @@
 .AsideMenu {
-    float: left;
     background: #191d22;
     color: #a7a7a7;
-    position: relative;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+    border: 2px solid white;
 }
 
-@media only screen and (min-width: 800px) {
-    .AsideMenu {
-        width: 200px;
-    }
+.AsideMenu::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
 
-    .AsideMenu img {
-        width: auto;
-        height: auto;
-    }
+.AsideMenu {
+    width: 200px;
+}
+
+.AsideMenu img {
+    width: auto;
+    height: auto;
 }
 
 .textPart:hover {
     color: #f9f9f9;
+}
+
+.bottom {
+    float: bottom;
 }

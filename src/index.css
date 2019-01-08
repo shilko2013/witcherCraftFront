@@ -22,3 +22,16 @@ code {
   user-select: none;           /* Non-prefixed version, currently
                                   not supported by any browser */
 }
+
+@font-face {
+  font-family: "Arnold CY";
+  src: url("./app/resources/fonts/Arnold CY.otf");
+}
+
+
+
+body {
+  background: #0b0c11;
+  color: #c4c4c4;
+  font-family: 'Arnold CY', Arial, sans-serif;
+}

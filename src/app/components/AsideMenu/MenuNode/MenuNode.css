@@ -6,6 +6,8 @@ img {
     height: 50px;
     width: 200px;
     background: #191d22;
+    text-align: center;
+    border: 1px solid #c4c4c4;
 }
 
 .nodeText {
@@ -17,21 +19,26 @@ img {
     display: none;
 }
 
-@media only screen and (min-width: 800px) {
-    .listPart {
-        left: 200px;
-        bottom: 50px;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    .listPart {
-
-    }
-}
-
 .MenuNode:hover .listPart {
     display: inline;
+}
+
+span.triangle {
+    display: inline-block;
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    transition-timing-function: ease-out;
+}
+
+.MenuNode:hover span.triangle {
+
+    -webkit-transform: rotate(-630deg);
+    -moz-transform: rotate(-630deg);
+    -o-transform: rotate(-630deg);
+    -ms-transform: rotate(-630deg);
+    transform: rotate(-630deg);
 }
 
 a {
