@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="53c9989b-050b-408e-8ddb-d0991324063f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/AsideMenu/AsideMenu.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/AsideMenu/AsideMenu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/welcome/Welcome.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/welcome/Welcome.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/AsideMenu/LoginNode/LoginNode.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/AsideMenu/LoginNode/LoginNode.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -38,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/components/AsideMenu/AsideMenu.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+            <state relative-caret-position="388">
+              <caret line="62" column="21" lean-forward="true" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -98,20 +97,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/pages/welcome/Welcome.css">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/app/components/AsideMenu/LoginNode/LoginNode.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+            <state relative-caret-position="270">
+              <caret line="18" column="12" lean-forward="true" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/actions/AuthActions.ts">
+        <entry file="file://$PROJECT_DIR$/src/app/pages/welcome/Welcome.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+            <state relative-caret-position="330">
+              <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -164,7 +163,6 @@
         <option value="$PROJECT_DIR$/src/app/components/AsideMenu/CraftRef/CraftRef.js" />
         <option value="$PROJECT_DIR$/src/app/App.css" />
         <option value="$PROJECT_DIR$/src/index.css" />
-        <option value="$PROJECT_DIR$/src/app/components/AsideMenu/LoginNode/LoginNode.css" />
         <option value="$PROJECT_DIR$/src/app/components/AsideMenu/MenuNode/MenuNode.js" />
         <option value="$PROJECT_DIR$/src/app/components/AsideMenu/MenuNode/MenuNode.css" />
         <option value="$PROJECT_DIR$/src/app/App.js" />
@@ -175,6 +173,7 @@
         <option value="$PROJECT_DIR$/src/app/pages/welcome/Welcome.js" />
         <option value="$PROJECT_DIR$/src/app/pages/welcome/Welcome.css" />
         <option value="$PROJECT_DIR$/src/app/components/AsideMenu/AsideMenu.css" />
+        <option value="$PROJECT_DIR$/src/app/components/AsideMenu/LoginNode/LoginNode.css" />
       </list>
     </option>
   </component>
@@ -396,7 +395,7 @@
       <workItem from="1546688531213" duration="11972000" />
       <workItem from="1546771587503" duration="14775000" />
       <workItem from="1546860528537" duration="25118000" />
-      <workItem from="1546943693784" duration="11360000" />
+      <workItem from="1546943693784" duration="12671000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1546344083941</created>
@@ -524,15 +523,28 @@
       <option name="project" value="LOCAL" />
       <updated>1546956253760</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="button background ready.">
+      <created>1546961992559</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1546961992559</updated>
+    </task>
+    <task id="LOCAL-00020" summary="3d rotate ready.">
+      <created>1546962193598</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1546962193598</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118051000" />
+    <option name="totallyTimeSpent" value="119362000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="961" y="0" width="959" height="1054" extended-state="4" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2596154" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -598,7 +610,10 @@
     <MESSAGE value="window height ready." />
     <MESSAGE value="animation for AsideMenu ready." />
     <MESSAGE value="Welcome page ready." />
-    <option name="LAST_COMMIT_MESSAGE" value="Welcome page ready." />
+    <MESSAGE value="button background ready." />
+    <MESSAGE value="3d rotate ready." />
+    <MESSAGE value="animation for LoginForm ready." />
+    <option name="LAST_COMMIT_MESSAGE" value="animation for LoginForm ready." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/public/index.html">
@@ -693,13 +708,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/AsideMenu/LoginNode/LoginNode.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="15" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
@@ -748,31 +756,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/actions/InterfaceActions.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/reducers/InterfaceReducer.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/AsideMenu/LoginNode/LoginNode.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="52" column="24" lean-forward="true" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/AsideMenu/MenuNode/MenuNode.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="26" column="26" lean-forward="true" selection-start-line="26" selection-start-column="26" selection-end-line="31" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -796,6 +783,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/pages/welcome/Welcome.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/AsideMenu/AsideMenu.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="62" column="21" lean-forward="true" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/AsideMenu/LoginNode/LoginNode.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="52" column="24" lean-forward="true" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/actions/InterfaceActions.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/pages/welcome/Welcome.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -806,17 +821,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/pages/welcome/Welcome.css">
+    <entry file="file://$PROJECT_DIR$/src/app/components/AsideMenu/MenuNode/MenuNode.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+        <state relative-caret-position="210">
+          <caret line="26" column="26" lean-forward="true" selection-start-line="26" selection-start-column="26" selection-end-line="31" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/AsideMenu/AsideMenu.css">
+    <entry file="file://$PROJECT_DIR$/src/app/components/AsideMenu/LoginNode/LoginNode.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+        <state relative-caret-position="270">
+          <caret line="18" column="12" lean-forward="true" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
         </state>
       </provider>
     </entry>

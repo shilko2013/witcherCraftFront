@@ -1,9 +1,15 @@
 .LoginForm {
-    display: none;
+    transform-origin: 0 0;
+    transform: scale(0);
     border: 2px solid #333740;
     background: #282c34;
     padding: 10px 10px 10px 10px;
     position: absolute;
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    transition-timing-function: ease-out;
 }
 
 .textPart {
@@ -34,7 +40,7 @@
 }
 
 .clicked {
-    display: block;
+    transform: scale(1);
     top: 250px;
 }
 
