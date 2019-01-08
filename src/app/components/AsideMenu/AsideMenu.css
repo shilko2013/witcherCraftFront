@@ -46,7 +46,7 @@
     z-index: 20000;
     width: 30px;
     height: 30px;
-    background: #282c34;
+    background: #0b0c11;
     color: #c4c4c4;
     font-size: 25px;
     cursor: pointer;
@@ -61,6 +61,7 @@
 }
 
 .buttonMenuIsHidden {
+    background: #5e6873;
     left: 0;
 }
 

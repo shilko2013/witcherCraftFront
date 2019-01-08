@@ -19,6 +19,10 @@ h1 {
     transition-timing-function: linear;
 }
 
+.Welcome p {
+    padding: 0 0 0 10px;
+}
+
 .Welcome::-webkit-scrollbar {
     width: 0;
     background: transparent;
