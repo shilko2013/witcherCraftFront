@@ -10,9 +10,19 @@ h1 {
     position: relative;
     top: 10px;
     left: 210px;
+
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
 }
 
 .Welcome::-webkit-scrollbar {
     width: 0;
     background: transparent;
+}
+
+.fullScreen {
+    left: 0;
 }

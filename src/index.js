@@ -6,10 +6,12 @@ import * as serviceWorker from './serviceWorker';
 import {Provider} from 'react-redux';
 import {combineReducers, createStore} from "redux";
 import {authReducer} from './app/reducers/AuthReducer';
+import {interfaceReducer} from "./app/reducers/InterfaceReducer";
 import {BrowserRouter} from 'react-router-dom';
 
 const store = createStore(combineReducers({
-    auth: authReducer
+    auth: authReducer,
+    interface: interfaceReducer
 }));
 
 store.subscribe(() => {

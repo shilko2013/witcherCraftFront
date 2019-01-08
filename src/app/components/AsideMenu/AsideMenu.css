@@ -9,6 +9,12 @@
     overflow: -moz-scrollbars-none;
     border: 2px solid white;
     width: 200px;
+
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
 }
 
 .AsideMenu::-webkit-scrollbar {
@@ -33,6 +39,31 @@
     color: #f9f9f9;
 }
 
-.bottom {
-    float: bottom;
+.hideButton {
+    position: absolute;
+    top: 2px;
+    left: 172px;
+    z-index: 20000;
+    width: 30px;
+    height: 30px;
+    background: #282c34;
+    color: #c4c4c4;
+    font-size: 25px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+
+.buttonMenuIsHidden {
+    left: 0;
+}
+
+.isHidden {
+    transform: translate(-210px,0);
 }

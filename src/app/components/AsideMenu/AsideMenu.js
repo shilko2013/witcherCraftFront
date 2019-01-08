@@ -8,6 +8,7 @@ import connect from "react-redux/es/connect/connect";
 import LoginNode from "./LoginNode/LoginNode";
 import LogoutNode from "./LogoutNode/LogoutNode";
 import {ACCOUNT_NUMBER, AMOUNT, COMMENT, ID_YANDEX_METRIKA} from "../../resources/ExternalResources";
+import {switchShow} from "../../actions/InterfaceActions";
 
 class AsideMenu extends Component {
 
@@ -32,16 +33,14 @@ class AsideMenu extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {
-            isShow: true
-        };
     }
 
     render() {
         console.log(this.props);
         return (
-            <aside className="AsideMenu" style={{height: window.innerHeight}}>
-                <div className="top">
+            <div>
+                <aside className={this.props.isShow ? 'AsideMenu' : 'AsideMenu isHidden'}
+                style={{height: this.props.height}}>
                     <LogoRef/>
                     {!this.isLogin() &&
                     <LoginNode text="Вход/регистрация" src={loginImg}/>
@@ -56,8 +55,6 @@ class AsideMenu extends Component {
                               nodes={["Компоненты", "Чертежи", "Предметы"]}
                               nodeHrefs={["4", "5", "6"]}/>
                     <CraftRef/>
-                </div>
-                <div className="bottom">
                     {this.isAdmin() &&
                     <MenuNode text="Панель управления"
                               href="/admin"/>
@@ -73,9 +70,12 @@ class AsideMenu extends Component {
                               }/>
                     <MenuNode text="Аналитика сайта"
                               isExternal={true}
-                              href={"https://metrika.yandex.ru/dashboard?id="+ID_YANDEX_METRIKA}/>
-                </div>
-            </aside>
+                              href={"https://metrika.yandex.ru/dashboard?id=" + ID_YANDEX_METRIKA}/>
+                </aside>
+                <button className={this.props.isShow ? "hideButton" : "hideButton buttonMenuIsHidden"}
+                        onClick={this.props.switchShow}>⚔
+                </button>
+            </div>
         )
     }
 }
@@ -83,5 +83,11 @@ class AsideMenu extends Component {
 export default connect(
     state => ({
         role: state.auth.role,
+        isShow: state.interface.asideMenuIsShow
+    }),
+    dispatch => ({
+        switchShow: () => {
+            dispatch(switchShow());
+        }
     })
 )(AsideMenu);
