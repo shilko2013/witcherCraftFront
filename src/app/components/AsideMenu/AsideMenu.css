@@ -1,7 +1,6 @@
 .AsideMenu {
     background: #191d22;
     color: #a7a7a7;
-    min-height: 100vh;
     position: absolute;
     top: 0;
     left: 0;
@@ -9,6 +8,7 @@
     -ms-overflow-style: none;
     overflow: -moz-scrollbars-none;
     border: 2px solid white;
+    width: 200px;
 }
 
 .AsideMenu::-webkit-scrollbar {
@@ -16,13 +16,17 @@
     background: transparent;
 }
 
-.AsideMenu {
-    width: 200px;
-}
-
 .AsideMenu img {
     width: auto;
     height: auto;
+}
+
+@media only screen and (min-width: 800px) {
+
+    .AsideMenu {
+        min-height: 100vh;
+    }
+
 }
 
 .textPart:hover {
