@@ -1,10 +1,12 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import './App.css';
 import Welcome from "./pages/welcome/Welcome";
 import AsideMenu from "./components/AsideMenu/AsideMenu";
 import {Route, Switch} from 'react-router-dom';
-import { YMInitializer } from 'react-yandex-metrika';
+import {YMInitializer} from 'react-yandex-metrika';
 import {ID_YANDEX_METRIKA} from "./resources/ExternalResources";
+import Favicon from "react-favicon";
+import logoImg from './resources/images/logo.png';
 
 class App extends Component {
 
@@ -21,32 +23,34 @@ class App extends Component {
         window.removeEventListener('resize', this.updateWindowDimensions);
     }
 
-    updateWindowDimensions= () => {
-        this.setState({ windowWidth: window.innerWidth, windowHeight: window.innerHeight });
+    updateWindowDimensions = () => {
+        this.setState({windowWidth: window.innerWidth, windowHeight: window.innerHeight});
     };
 
     componentDidMount() {
         this.updateWindowDimensions();
         window.addEventListener('resize', this.updateWindowDimensions);
         window.onload = this.updateWindowDimensions;
+        document.title = "WitcherProject";
     }
 
-  render() {
-      const WelcomeWithHeight = (props) => {
-          return (
-              <Welcome height={this.state.windowHeight}/>
-          );
-      };
-    return (
-        <div className="rootApp">
-            <YMInitializer accounts={[ID_YANDEX_METRIKA]} />
-        <AsideMenu height={this.state.windowHeight}/>
-            <Switch>
-              <Route path='/' component={WelcomeWithHeight}/>
-            </Switch>
-        </div>
-    );
-  }
+    render() {
+        const WelcomeWithHeight = (props) => {
+            return (
+                <Welcome height={this.state.windowHeight}/>
+            );
+        };
+        return (
+            <div className="rootApp">
+                <Favicon url={[logoImg]}/>
+                <YMInitializer accounts={[ID_YANDEX_METRIKA]}/>
+                <AsideMenu height={this.state.windowHeight}/>
+                <Switch>
+                    <Route path='/' component={WelcomeWithHeight}/>
+                </Switch>
+            </div>
+        );
+    }
 }
 
 export default App;

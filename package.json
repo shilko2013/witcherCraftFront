@@ -10,7 +10,8 @@
     "react-scripts": "2.1.2",
     "redux": "4.0.1",
     "react-router-dom": "latest",
-    "react-yandex-metrika": "latest"
+    "react-yandex-metrika": "latest",
+    "react-favicon": "latest"
   },
   "scripts": {
     "start": "react-scripts start",
