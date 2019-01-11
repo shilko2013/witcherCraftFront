@@ -14,11 +14,6 @@ class IngredientsTable extends Component {
         };
     }
 
-    isEditor = () => {
-        return this.props.role === "USER_STATUS_ADMIN"
-            || this.props.role === "USER_STATUS_EDITOR";
-    };
-
     getIngredients = () => {
         return axios.get("http://localhost:8080/witcher_war_exploded/component/components/false");
     };
@@ -41,11 +36,6 @@ class IngredientsTable extends Component {
     render() {
         return (
             <div className="IngredientsTable">
-                {this.isEditor &&
-                <button onClick={() => {
-                    history.push('/add/ingredient');
-                }}>Добавить ингредиент</button>
-                }
                 <div className="errorDiv">
                     {this.state.error}
                 </div>
