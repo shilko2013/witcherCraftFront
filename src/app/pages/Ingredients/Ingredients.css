@@ -1,0 +1,33 @@
+h1 {
+    margin: 0 0 10px;
+    text-align: center;
+}
+
+.Ingredients {
+    height: 100vh;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+    position: relative;
+    top: 10px;
+    left: 210px;
+
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+
+.Ingredients p {
+    padding: 0 0 0 10px;
+}
+
+.Ingredients::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+.fullScreen {
+    left: 0;
+}

@@ -50,7 +50,7 @@ class AsideMenu extends Component {
                     }
                     <MenuNode text="Алхимия"
                               nodes={["Ингридиенты", "Рецепты", "Предметы"]}
-                              nodeHrefs={["1", "2", "3"]}/>
+                              nodeHrefs={["/ingredients", "2", "3"]}/>
                     <MenuNode text="Ремесло"
                               nodes={["Компоненты", "Чертежи", "Предметы"]}
                               nodeHrefs={["4", "5", "6"]}/>
@@ -72,9 +72,11 @@ class AsideMenu extends Component {
                               isExternal={true}
                               href={"https://metrika.yandex.ru/dashboard?id=" + ID_YANDEX_METRIKA}/>
                 </aside>
+                {this.props.width < 1000 &&
                 <button className={this.props.isShow ? "hideButton" : "hideButton buttonMenuIsHidden"}
                         onClick={this.props.switchShow}>⚔
                 </button>
+                }
             </div>
         )
     }

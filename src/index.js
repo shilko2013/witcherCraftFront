@@ -8,6 +8,7 @@ import {combineReducers, createStore} from "redux";
 import {authReducer} from './app/reducers/AuthReducer';
 import {interfaceReducer} from "./app/reducers/InterfaceReducer";
 import {BrowserRouter} from 'react-router-dom';
+import createHistory from 'history/createBrowserHistory';
 
 const store = createStore(combineReducers({
     auth: authReducer,
@@ -17,6 +18,8 @@ const store = createStore(combineReducers({
 store.subscribe(() => {
     console.log(store.getState());
 });
+
+export const history = createHistory();
 
 ReactDOM.render(
     <Provider store={store}>

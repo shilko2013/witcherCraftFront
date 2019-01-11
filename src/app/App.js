@@ -1,12 +1,13 @@
 import React, {Component} from 'react';
 import './App.css';
-import Welcome from "./pages/welcome/Welcome";
+import Welcome from "./pages/Welcome/Welcome";
 import AsideMenu from "./components/AsideMenu/AsideMenu";
-import {Route, Switch} from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import {YMInitializer} from 'react-yandex-metrika';
 import {ID_YANDEX_METRIKA} from "./resources/ExternalResources";
 import Favicon from "react-favicon";
 import logoImg from './resources/images/logo.png';
+import Ingredients from './pages/Ingredients/Ingredients';
 
 class App extends Component {
 
@@ -40,13 +41,19 @@ class App extends Component {
                 <Welcome height={this.state.windowHeight}/>
             );
         };
+        const IngredientsWithHeight = (props) => {
+            return (
+                <Ingredients height={this.state.windowHeight}/>
+            );
+        };
         return (
             <div className="rootApp">
                 <Favicon url={[logoImg]}/>
                 <YMInitializer accounts={[ID_YANDEX_METRIKA]}/>
-                <AsideMenu height={this.state.windowHeight}/>
+                <AsideMenu height={this.state.windowHeight} width={this.state.windowWidth}/>
                 <Switch>
-                    <Route path='/' component={WelcomeWithHeight}/>
+                    <Route exact path='/' component={WelcomeWithHeight}/>
+                    <Route path='/ingredients' component={IngredientsWithHeight}/>
                 </Switch>
             </div>
         );
