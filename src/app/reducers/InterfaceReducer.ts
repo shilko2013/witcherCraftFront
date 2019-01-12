@@ -1,8 +1,8 @@
-import InterfaceActions from "../actions/InterfaceActions";
+import {SWITCH_SHOW} from "../actions/InterfaceActions";
 
 export function interfaceReducer(state = {asideMenuIsShow: true}, action: any) {
     switch (action.type) {
-        case InterfaceActions.SWITCH_SHOW:
+        case SWITCH_SHOW:
             return {
                 ...state,
                 asideMenuIsShow: !state.asideMenuIsShow

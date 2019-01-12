@@ -1,11 +1,8 @@
-export enum AuthActions {
-    AUTH_LOGIN,
-    AUTH_LOGOUT
-}
-
+export const AUTH_LOGIN = "AUTH_LOGIN";
+export const AUTH_LOGOUT = "AUTH_LOGOUT";
 export function login(role: any, error = '') {
     return {
-        type: AuthActions.AUTH_LOGIN,
+        type: AUTH_LOGIN,
         error: error,
         role: role
     }
@@ -13,8 +10,6 @@ export function login(role: any, error = '') {
 
 export function logout() {
     return {
-        type: AuthActions.AUTH_LOGOUT
+        type: AUTH_LOGOUT
     }
 }
-
-export default AuthActions;

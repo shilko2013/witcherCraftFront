@@ -72,11 +72,9 @@ class AsideMenu extends Component {
                               isExternal={true}
                               href={"https://metrika.yandex.ru/dashboard?id=" + ID_YANDEX_METRIKA}/>
                 </aside>
-                {this.props.width < 1000 &&
                 <button className={this.props.isShow ? "hideButton" : "hideButton buttonMenuIsHidden"}
                         onClick={this.props.switchShow}>⚔
                 </button>
-                }
             </div>
         )
     }

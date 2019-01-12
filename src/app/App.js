@@ -2,12 +2,13 @@ import React, {Component} from 'react';
 import './App.css';
 import Welcome from "./pages/Welcome/Welcome";
 import AsideMenu from "./components/AsideMenu/AsideMenu";
-import { Route, Switch } from 'react-router-dom';
+import {Route, Switch} from 'react-router-dom';
 import {YMInitializer} from 'react-yandex-metrika';
 import {ID_YANDEX_METRIKA} from "./resources/ExternalResources";
 import Favicon from "react-favicon";
 import logoImg from './resources/images/logo.png';
 import Ingredients from './pages/Ingredients/Ingredients';
+import IngredientPage from "./pages/IngredientPage/IngredientPage";
 
 class App extends Component {
 
@@ -46,6 +47,11 @@ class App extends Component {
                 <Ingredients height={this.state.windowHeight}/>
             );
         };
+        const ComponentWithId = ({match}) => {
+            return (
+                <IngredientPage ingredientId={match.params.id}/>
+            );
+        };
         return (
             <div className="rootApp">
                 <Favicon url={[logoImg]}/>
@@ -54,6 +60,7 @@ class App extends Component {
                 <Switch>
                     <Route exact path='/' component={WelcomeWithHeight}/>
                     <Route path='/ingredients' component={IngredientsWithHeight}/>
+                    <Route path='/ingredient/:id' component={ComponentWithId}/>
                 </Switch>
             </div>
         );
