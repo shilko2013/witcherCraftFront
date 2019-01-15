@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="53c9989b-050b-408e-8ddb-d0991324063f" name="Default Changelist" comment="Recipe page added.">
+    <list default="true" id="53c9989b-050b-408e-8ddb-d0991324063f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/AsideMenu/AsideMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/AsideMenu/AsideMenu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/AsideMenu/MenuNode/MenuNode.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/AsideMenu/MenuNode/MenuNode.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/AsideMenu/MenuNode/MenuNode.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/AsideMenu/MenuNode/MenuNode.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/RecipesTable/RecipesTable.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/RecipesTable/RecipesTable.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/RecipesTable/RecipesTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/RecipesTable/RecipesTable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/RecipesPage/RecipesPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/RecipesPage/RecipesPage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/Recipe/Recipe.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/Recipe/Recipe.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/Recipe/Recipe.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/Recipe/Recipe.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,28 +19,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/pages/Things/Things.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/pages/Recipe/Recipe.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="564">
-              <caret line="52" column="7" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="97" column="33" lean-forward="true" selection-start-line="97" selection-start-column="33" selection-end-line="97" selection-end-column="47" />
+            <state relative-caret-position="264">
+              <caret line="87" column="24" selection-start-line="87" selection-start-column="24" selection-end-line="87" selection-end-column="24" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -53,40 +31,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/pages/Things/Things.js">
+        <entry file="file://$PROJECT_DIR$/src/app/pages/IngredientPage/IngredientPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="4" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+            <state relative-caret-position="90">
+              <caret line="6" selection-start-line="6" selection-end-line="99" selection-end-column="2" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/components/RecipesTable/RecipesTable.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="14" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/components/IngredientsTable/IngredientsTable.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="34" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/components/AlchemyThingTable/AlchemyThingTable.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -115,14 +66,65 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/components/AlchemyThingTable/AlchemyThingTable.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+            <state relative-caret-position="330">
+              <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/pages/ThingPage/ThingPage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="53" column="36" lean-forward="true" selection-start-line="53" selection-start-column="36" selection-end-line="53" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/pages/Recipe/Recipe.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="49" column="38" lean-forward="true" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/app/pages/Recipe/Recipe.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" column="30" lean-forward="true" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/pages/IngredientPage/IngredientPage.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="279">
+              <caret line="41" column="18" selection-end-line="56" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/pages/ThingPage/ThingPage.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="29">
+              <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -154,8 +156,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/app/redux/storeManager.ts" />
-        <option value="$PROJECT_DIR$/src/app/redux/api/AuthService.ts" />
         <option value="$PROJECT_DIR$/src/app/components/AsideMenu/LoginNode/LoginNode.tsx" />
         <option value="$PROJECT_DIR$/src/app/components/AsideMenu/LogoutNode/LogoutNode.js" />
         <option value="$PROJECT_DIR$/src/app/components/AsideMenu/LogoRef/LogoRef.css" />
@@ -192,9 +192,7 @@
         <option value="$PROJECT_DIR$/src/app/components/IngredientsTable/IngredientsTable.css" />
         <option value="$PROJECT_DIR$/src/app/pages/RecipesPage/RecipesPage.js" />
         <option value="$PROJECT_DIR$/src/app/pages/IngredientPage/IngredientPage.js" />
-        <option value="$PROJECT_DIR$/src/app/pages/Recipe/Recipe.css" />
         <option value="$PROJECT_DIR$/src/app/pages/RecipesPage/RecipesPage.css" />
-        <option value="$PROJECT_DIR$/src/app/pages/Recipe/Recipe.js" />
         <option value="$PROJECT_DIR$/src/app/components/RecipesTable/RecipesTable.js" />
         <option value="$PROJECT_DIR$/src/app/components/AsideMenu/MenuNode/MenuNode.js" />
         <option value="$PROJECT_DIR$/src/app/components/AsideMenu/MenuNode/MenuNode.css" />
@@ -202,9 +200,13 @@
         <option value="$PROJECT_DIR$/src/app/pages/Things/Things.css" />
         <option value="$PROJECT_DIR$/src/app/pages/Things/Things.js" />
         <option value="$PROJECT_DIR$/src/app/components/AlchemyThingTable/AlchemyThingTable.css" />
-        <option value="$PROJECT_DIR$/src/app/App.js" />
         <option value="$PROJECT_DIR$/src/app/components/AsideMenu/AsideMenu.js" />
         <option value="$PROJECT_DIR$/src/app/components/AlchemyThingTable/AlchemyThingTable.js" />
+        <option value="$PROJECT_DIR$/src/app/pages/ThingPage/ThingPage.css" />
+        <option value="$PROJECT_DIR$/src/app/App.js" />
+        <option value="$PROJECT_DIR$/src/app/pages/ThingPage/ThingPage.js" />
+        <option value="$PROJECT_DIR$/src/app/pages/Recipe/Recipe.js" />
+        <option value="$PROJECT_DIR$/src/app/pages/Recipe/Recipe.css" />
       </list>
     </option>
   </component>
@@ -405,6 +407,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="ThingPage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="witcher-craft" type="b2602c69:ProjectViewProjectNode" />
+              <item name="witcher-craft" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="Things" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -514,7 +524,7 @@
       <workItem from="1547219550825" duration="13593000" />
       <workItem from="1547291690812" duration="23392000" />
       <workItem from="1547517400734" duration="5959000" />
-      <workItem from="1547546097090" duration="11930000" />
+      <workItem from="1547546097090" duration="13368000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1546344083941</created>
@@ -705,11 +715,18 @@
       <option name="project" value="LOCAL" />
       <updated>1547551469417</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="AlchemyThings page added.">
+      <created>1547563250518</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1547563250518</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="176745000" />
+    <option name="totallyTimeSpent" value="178183000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="961" y="0" width="959" height="1053" extended-state="4" />
@@ -741,7 +758,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="initial commit" />
     <MESSAGE value="Added aside menu prototype." />
     <MESSAGE value="redux store added &amp; authService." />
     <MESSAGE value="fuck." />
@@ -766,11 +782,10 @@
     <MESSAGE value="Ingredient edit page added." />
     <MESSAGE value="Ingredient add page added." />
     <MESSAGE value="Recipe page added." />
-    <option name="LAST_COMMIT_MESSAGE" value="Recipe page added." />
+    <MESSAGE value="AlchemyThings page added." />
+    <option name="LAST_COMMIT_MESSAGE" value="AlchemyThings page added." />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/app/components/AsideMenu/MenuNode/NodeList/NodeList.js" />
-    <entry file="file://$PROJECT_DIR$/src/app/components/Article/Article.js" />
     <entry file="file://$PROJECT_DIR$/src/app/components/AsideMenu/MenuNode/NodeList/NodeList.css" />
     <entry file="file://$PROJECT_DIR$/node_modules/react-router/es/Route.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -985,33 +1000,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/pages/IngredientPage/IngredientPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/pages/IngredientPage/IngredientPage.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="41" column="18" selection-end-line="56" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/pages/Recipe/Recipe.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="72" column="37" selection-start-line="72" selection-start-column="37" selection-end-line="72" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/components/RecipesTable/RecipesTable.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -1066,7 +1054,7 @@
     <entry file="file://$PROJECT_DIR$/src/app/pages/Things/Things.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="15" column="4" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -1077,13 +1065,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/pages/Recipe/Recipe.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="52" column="7" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -1104,7 +1085,7 @@
     <entry file="file://$PROJECT_DIR$/src/app/components/AlchemyThingTable/AlchemyThingTable.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
-          <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -1112,16 +1093,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
           <caret line="75" column="19" selection-start-line="75" selection-start-column="19" selection-end-line="75" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="97" column="33" lean-forward="true" selection-start-line="97" selection-start-column="33" selection-end-line="97" selection-end-column="47" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -1140,11 +1111,72 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/components/AlchemyThingTable/AlchemyThingTable.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+        <state relative-caret-position="330">
+          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/pages/IngredientPage/IngredientPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="99" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/pages/IngredientPage/IngredientPage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="41" column="18" selection-end-line="56" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/pages/ThingPage/ThingPage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="87" column="24" selection-start-line="87" selection-start-column="24" selection-end-line="87" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/pages/Recipe/Recipe.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="49" column="38" lean-forward="true" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/pages/ThingPage/ThingPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="53" column="36" lean-forward="true" selection-start-line="53" selection-start-column="36" selection-end-line="53" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/pages/Recipe/Recipe.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="30" lean-forward="true" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
         </state>
       </provider>
     </entry>

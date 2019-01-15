@@ -1,16 +1,9 @@
-.Recipe h1 {
+h1 {
     margin: 0 0 10px;
     text-align: center;
-    cursor:pointer;
-    text-decoration:underline;
 }
 
-.Recipe h1:hover {
-    text-decoration:none;
-    text-shadow: 1px 1px 1px #555;
-}
-
-.Recipe {
+.ThingPage {
     height: 100vh;
     overflow: scroll;
     -ms-overflow-style: none;
@@ -26,11 +19,11 @@
     transition-timing-function: linear;
 }
 
-.Recipe p {
+.ThingPage p {
     padding: 0 0 0 10px;
 }
 
-.Recipe::-webkit-scrollbar {
+.ThingPage::-webkit-scrollbar {
     width: 0;
     background: transparent;
 }
@@ -43,13 +36,13 @@
     margin-right: 210px;
 }
 
-.Recipe img {
+.ThingPage img {
     float: right;
     width: 200px;
     height: 250px;
 }
 
-.Recipe button {
+.ThingPage button {
     background: #5e6873;
     color: #c4c4c4;
     cursor: pointer;
@@ -57,7 +50,7 @@
     margin-bottom: 10px;
 }
 
-.Recipe button:hover {
+.ThingPage button:hover {
     background: #90a1ac;
     color: #ffffff;
     cursor: pointer;

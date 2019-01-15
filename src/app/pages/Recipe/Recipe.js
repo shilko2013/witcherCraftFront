@@ -52,7 +52,10 @@ class Recipe extends Component {
                 }
                 {this.state.draft &&
                 <div className={!this.props.asideMenuIsShow ? "pageContent" : "pageContent pageContentNotFullScreen"}>
-                    <h1>{this.state.draft.thing.name}</h1>
+                    <h1 onClick={() => this.setState({
+                        ...this.state,
+                        redirect: '/thing/' + this.state.draft.thing.id
+                    })}>{this.state.draft.thing.name}</h1>
                     {this.isEditor() &&
                     <button onClick={() => this.setState({
                         ...this.state,

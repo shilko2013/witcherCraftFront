@@ -14,6 +14,7 @@ import IngredientAddPage from "./pages/IngredientAddPage/IngredientAddPage";
 import RecipesPage from "./pages/RecipesPage/RecipesPage";
 import Recipe from "./pages/Recipe/Recipe";
 import Things from "./pages/Things/Things";
+import ThingPage from "./pages/ThingPage/ThingPage";
 
 class App extends Component {
 
@@ -82,6 +83,11 @@ class App extends Component {
                 <Things height={this.state.windowHeight}/>
             );
         };
+        const ThingPageWithId = ({match}) => {
+            return (
+                <ThingPage thingId={match.params.id}/>
+            );
+        };
         return (
             <div className="rootApp">
                 <Favicon url={[logoImg]}/>
@@ -96,6 +102,7 @@ class App extends Component {
                     <Route path='/recipes' component={RecipesPageWithHeight}/>
                     <Route path='/draft/:id' component={RecipeWithId}/>
                     <Route path='/alchemyThings' component={ThingsWithHeight}/>
+                    <Route path='/thing/:id' component={ThingPageWithId}/>
                     <Route component={WelcomeWithHeight}/>
                 </Switch>
             </div>
