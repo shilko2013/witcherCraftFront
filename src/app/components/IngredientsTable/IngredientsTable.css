@@ -15,13 +15,13 @@
 }
 
 .dataTable th {
-    border: 2px solid white;
+    border: 2px solid grey;
     padding: 5px 10px 5px 10px;
 }
 
 .dataTable td {
     height: 50px;
-    border: 2px solid white;
+    border: 2px solid grey;
     padding: 5px 10px 5px 10px;
     cursor: pointer;
 }

@@ -1,4 +1,4 @@
-img {
+.MenuNode img {
     float: left;
 }
 
@@ -23,7 +23,7 @@ img {
     display: inline;
 }
 
-span.triangle {
+.MenuNode span.triangle {
     display: inline-block;
     -webkit-transition-duration: 0.8s;
     -moz-transition-duration: 0.8s;
@@ -41,11 +41,11 @@ span.triangle {
     transform: rotate(-630deg);
 }
 
-a {
+.MenuNode a {
     text-decoration: none;
     color: #a7a7a7;
 }
 
-a:hover {
+.MenuNode a:hover {
     color: #f9f9f9;
 }

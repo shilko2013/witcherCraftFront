@@ -10,6 +10,7 @@ import logoImg from './resources/images/logo.png';
 import Ingredients from './pages/Ingredients/Ingredients';
 import IngredientPage from "./pages/IngredientPage/IngredientPage";
 import IngredientEditPage from "./pages/IngredientEditPage/IngredientEditPage";
+import IngredientAddPage from "./pages/IngredientAddPage/IngredientAddPage";
 
 class App extends Component {
 
@@ -68,6 +69,7 @@ class App extends Component {
                     <Route path='/ingredients' component={IngredientsWithHeight}/>
                     <Route path='/ingredient/:id' component={IngredientWithId}/>
                     <Route path='/edit/ingredient/:id' component={IngredientWithIdEdit}/>
+                    <Route path='/add/ingredient' component={IngredientAddPage}/>
                     <Route component={WelcomeWithHeight}/>
                 </Switch>
             </div>

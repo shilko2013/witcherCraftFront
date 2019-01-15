@@ -14,7 +14,7 @@ class IngredientsTable extends Component {
     }
 
     getIngredients = () => {
-        return axios.get("http://localhost:8080/witcher_war_exploded/component/components/false");
+        return axios.get("http://localhost:8080/witcher_war_exploded/component/components/true");
     };
 
     componentDidMount() {
