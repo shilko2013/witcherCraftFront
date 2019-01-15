@@ -11,6 +11,7 @@ import Ingredients from './pages/Ingredients/Ingredients';
 import IngredientPage from "./pages/IngredientPage/IngredientPage";
 import IngredientEditPage from "./pages/IngredientEditPage/IngredientEditPage";
 import IngredientAddPage from "./pages/IngredientAddPage/IngredientAddPage";
+import RecipesPage from "./pages/RecipesPage/RecipesPage";
 
 class App extends Component {
 
@@ -70,6 +71,7 @@ class App extends Component {
                     <Route path='/ingredient/:id' component={IngredientWithId}/>
                     <Route path='/edit/ingredient/:id' component={IngredientWithIdEdit}/>
                     <Route path='/add/ingredient' component={IngredientAddPage}/>
+                    <Route path='/recipes' component={RecipesPage}/>
                     <Route component={WelcomeWithHeight}/>
                 </Switch>
             </div>

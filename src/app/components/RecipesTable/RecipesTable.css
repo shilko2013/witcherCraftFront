@@ -1,0 +1,7 @@
+.RecipesTable .dataTable tr:hover {
+    background: #0b0c11;
+}
+
+.RecipesTable .dataTable td {
+    cursor: auto;
+}
