@@ -3,14 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="53c9989b-050b-408e-8ddb-d0991324063f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/actions/AuthActions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/actions/AuthActions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/actions/InterfaceActions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/actions/InterfaceActions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/AsideMenu/AsideMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/AsideMenu/AsideMenu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/IngredientsTable/IngredientsTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/IngredientsTable/IngredientsTable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/Ingredients/Ingredients.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/Ingredients/Ingredients.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/reducers/AuthReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/reducers/AuthReducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/reducers/InterfaceReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/reducers/InterfaceReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/AsideMenu/LoginNode/LoginNode.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/AsideMenu/LoginNode/LoginNode.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/IngredientPage/IngredientPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/IngredientPage/IngredientPage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/IngredientPage/IngredientPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/IngredientPage/IngredientPage.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,43 +21,61 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/pages/Ingredients/Ingredients.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/components/AsideMenu/AsideMenu.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="76" column="25" selection-start-line="76" selection-start-column="25" selection-end-line="76" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/reducers/AuthReducer.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+              <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/reducers/InterfaceReducer.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="885">
+              <caret line="70" column="27" selection-start-line="70" selection-start-column="27" selection-end-line="70" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/app/reducers/InterfaceReducer.ts">
+        <entry file="file://$PROJECT_DIR$/src/app/pages/IngredientEditPage/IngredientEditPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+            <state relative-caret-position="120">
+              <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/manifest.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -68,20 +83,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/pages/IngredientPage/IngredientPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="82" column="23" lean-forward="true" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/components/IngredientsTable/IngredientsTable.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="34" column="14" lean-forward="true" selection-start-line="34" selection-start-column="14" selection-end-line="37" selection-end-column="9" />
+            <state relative-caret-position="1110">
+              <caret line="78" column="59" selection-start-line="78" selection-start-column="59" selection-end-line="79" selection-end-column="49" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -92,38 +95,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/components/AsideMenu/LoginNode/LoginNode.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="198" column="24" selection-start-line="198" selection-start-column="24" selection-end-line="198" selection-end-column="24" />
+            <state relative-caret-position="870">
+              <caret line="63" column="17" selection-start-line="57" selection-start-column="16" selection-end-line="63" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/index.js">
+        <entry file="file://$PROJECT_DIR$/src/app/pages/IngredientPage/IngredientPage.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="23" column="16" lean-forward="true" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="630">
+              <caret line="42" column="1" selection-start-line="42" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/actions/AuthActions.ts">
+        <entry file="file://$PROJECT_DIR$/src/app/pages/IngredientEditPage/IngredientEditPage.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/actions/InterfaceActions.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+            <state relative-caret-position="254">
+              <caret line="41" column="18" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -164,7 +155,6 @@
         <option value="$PROJECT_DIR$/src/app/redux/api/AuthService.ts" />
         <option value="$PROJECT_DIR$/src/app/components/AsideMenu/LoginNode/LoginNode.tsx" />
         <option value="$PROJECT_DIR$/src/app/components/AsideMenu/LogoutNode/LogoutNode.js" />
-        <option value="$PROJECT_DIR$/src/app/components/AsideMenu/LoginNode/LoginNode.js" />
         <option value="$PROJECT_DIR$/src/app/components/AsideMenu/LogoRef/LogoRef.css" />
         <option value="$PROJECT_DIR$/src/app/components/AsideMenu/MenuNode/NodeList/NodeList.css" />
         <option value="$PROJECT_DIR$/src/app/components/AsideMenu/CraftRef/CraftRef.css" />
@@ -182,20 +172,24 @@
         <option value="$PROJECT_DIR$/src/app/pages/Ingridient/Ingridient.js" />
         <option value="$PROJECT_DIR$/src/app/pages/Ingredient/Ingredient.css" />
         <option value="$PROJECT_DIR$/src/app/pages/Ingredient/Ingredient.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/app/pages/Ingredients/Ingredients.css" />
         <option value="$PROJECT_DIR$/src/app/components/IngredientsTable/IngredientsTable.css" />
-        <option value="$PROJECT_DIR$/src/app/App.js" />
         <option value="$PROJECT_DIR$/src/app/components/IngredientsTable/IngredientsTable.js" />
-        <option value="$PROJECT_DIR$/src/app/pages/IngredientPage/IngredientPage.css" />
-        <option value="$PROJECT_DIR$/src/app/pages/IngredientPage/IngredientPage.js" />
         <option value="$PROJECT_DIR$/src/app/pages/Ingredients/Ingredients.js" />
         <option value="$PROJECT_DIR$/src/app/components/AsideMenu/AsideMenu.js" />
         <option value="$PROJECT_DIR$/src/app/actions/InterfaceActions.ts" />
         <option value="$PROJECT_DIR$/src/app/actions/AuthActions.ts" />
         <option value="$PROJECT_DIR$/src/app/reducers/AuthReducer.ts" />
         <option value="$PROJECT_DIR$/src/app/reducers/InterfaceReducer.ts" />
+        <option value="$PROJECT_DIR$/src/app/pages/IngredientPage/IngredientPage.css" />
+        <option value="$PROJECT_DIR$/src/app/pages/IngredientEditPage/IngredientEditPage.css" />
+        <option value="$PROJECT_DIR$/src/app/pages/IngredientPage/IngredientPage.js" />
+        <option value="$PROJECT_DIR$/src/app/components/AsideMenu/LoginNode/LoginNode.js" />
+        <option value="$PROJECT_DIR$/public/manifest.json" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/app/App.js" />
+        <option value="$PROJECT_DIR$/src/app/pages/IngredientEditPage/IngredientEditPage.js" />
       </list>
     </option>
   </component>
@@ -221,6 +215,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -332,6 +327,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="IngredientEditPage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="witcher-craft" type="b2602c69:ProjectViewProjectNode" />
+              <item name="witcher-craft" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="IngredientPage" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -368,7 +371,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -447,7 +449,8 @@
       <workItem from="1546943693784" duration="14285000" />
       <workItem from="1547028879923" duration="895000" />
       <workItem from="1547219550825" duration="13593000" />
-      <workItem from="1547291690812" duration="9779000" />
+      <workItem from="1547291690812" duration="23392000" />
+      <workItem from="1547517400734" duration="2080000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1546344083941</created>
@@ -610,11 +613,18 @@
       <option name="project" value="LOCAL" />
       <updated>1547234886687</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Ingredient page added.">
+      <created>1547302408711</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1547302408711</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145243000" />
+    <option name="totallyTimeSpent" value="160936000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="961" y="0" width="959" height="1054" extended-state="4" />
@@ -667,7 +677,8 @@
     <MESSAGE value="animation for LoginForm ready." />
     <MESSAGE value="Ingredients page ready." />
     <MESSAGE value="Ingredients page with scale image ready." />
-    <option name="LAST_COMMIT_MESSAGE" value="Ingredients page with scale image ready." />
+    <MESSAGE value="Ingredient page added." />
+    <option name="LAST_COMMIT_MESSAGE" value="Ingredient page added." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/public/index.html">
@@ -676,9 +687,6 @@
           <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/manifest.json">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/redux/api/AuthService.js" />
     <entry file="file://$PROJECT_DIR$/src/react-app-env.d.ts">
@@ -796,13 +804,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/components/AsideMenu/AsideMenu.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="855">
@@ -817,61 +818,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/pages/Welcome/Welcome.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/components/IngredientsTable/IngredientsTable.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/pages/Ingredients/Ingredients.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="32" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="51" column="50" lean-forward="true" selection-start-line="51" selection-start-column="50" selection-end-line="51" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/pages/IngredientPage/IngredientPage.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="34" column="25" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/pages/Welcome/Welcome.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="29" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/pages/IngredientPage/IngredientPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="82" column="23" lean-forward="true" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -882,23 +832,6 @@
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/pages/Ingredients/Ingredients.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/AsideMenu/LoginNode/LoginNode.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="198" column="24" selection-start-line="198" selection-start-column="24" selection-end-line="198" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -936,17 +869,116 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/pages/Welcome/Welcome.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/pages/Welcome/Welcome.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="29" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/pages/Ingredients/Ingredients.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="36" selection-start-line="36" selection-end-line="48" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/pages/Ingredients/Ingredients.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="20" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/reducers/AuthReducer.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/reducers/InterfaceReducer.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        <state relative-caret-position="165">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="885">
+          <caret line="70" column="27" selection-start-line="70" selection-start-column="27" selection-end-line="70" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/manifest.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/pages/IngredientPage/IngredientPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1110">
+          <caret line="78" column="59" selection-start-line="78" selection-start-column="59" selection-end-line="79" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/AsideMenu/LoginNode/LoginNode.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="63" column="17" selection-start-line="57" selection-start-column="16" selection-end-line="63" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/pages/IngredientPage/IngredientPage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="1" selection-start-line="42" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/pages/IngredientEditPage/IngredientEditPage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="41" column="18" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/pages/IngredientEditPage/IngredientEditPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

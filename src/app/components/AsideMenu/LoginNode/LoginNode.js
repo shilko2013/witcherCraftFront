@@ -52,7 +52,7 @@ class LoginNode extends Component {
                     setTimeout(() => {
                         this.props.login(response.headers.role);
                         console.log(response.headers.role);
-                    }, 1500);
+                    }, 1000);
                 } else throw Error('error');
             }).catch((error) => {
                 if (error.response && error.response.status === 401) {

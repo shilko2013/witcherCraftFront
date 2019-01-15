@@ -9,6 +9,7 @@ import Favicon from "react-favicon";
 import logoImg from './resources/images/logo.png';
 import Ingredients from './pages/Ingredients/Ingredients';
 import IngredientPage from "./pages/IngredientPage/IngredientPage";
+import IngredientEditPage from "./pages/IngredientEditPage/IngredientEditPage";
 
 class App extends Component {
 
@@ -47,9 +48,14 @@ class App extends Component {
                 <Ingredients height={this.state.windowHeight}/>
             );
         };
-        const ComponentWithId = ({match}) => {
+        const IngredientWithId = ({match}) => {
             return (
                 <IngredientPage ingredientId={match.params.id}/>
+            );
+        };
+        const IngredientWithIdEdit = ({match}) => {
+            return (
+                <IngredientEditPage ingredientId={match.params.id}/>
             );
         };
         return (
@@ -60,7 +66,9 @@ class App extends Component {
                 <Switch>
                     <Route exact path='/' component={WelcomeWithHeight}/>
                     <Route path='/ingredients' component={IngredientsWithHeight}/>
-                    <Route path='/ingredient/:id' component={ComponentWithId}/>
+                    <Route path='/ingredient/:id' component={IngredientWithId}/>
+                    <Route path='/edit/ingredient/:id' component={IngredientWithIdEdit}/>
+                    <Route component={WelcomeWithHeight}/>
                 </Switch>
             </div>
         );

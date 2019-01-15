@@ -3,7 +3,7 @@ h1 {
     text-align: center;
 }
 
-.IngredientPage {
+.IngredientEditPage {
     height: 100vh;
     overflow: scroll;
     -ms-overflow-style: none;
@@ -19,11 +19,11 @@ h1 {
     transition-timing-function: linear;
 }
 
-.IngredientPage p {
+.IngredientEditPage p {
     padding: 0 0 0 10px;
 }
 
-.IngredientPage::-webkit-scrollbar {
+.IngredientEditPage::-webkit-scrollbar {
     width: 0;
     background: transparent;
 }
@@ -36,13 +36,13 @@ h1 {
     margin-right: 210px;
 }
 
-.IngredientPage img {
+.IngredientEditPage img {
     float: right;
     width: 200px;
     height: 250px;
 }
 
-.IngredientPage button {
+.IngredientEditPage button {
     background: #5e6873;
     color: #c4c4c4;
     cursor: pointer;
@@ -50,7 +50,7 @@ h1 {
     margin-bottom: 10px;
 }
 
-.IngredientPage button:hover {
+.IngredientEditPage button:hover {
     background: #90a1ac;
     color: #ffffff;
     cursor: pointer;

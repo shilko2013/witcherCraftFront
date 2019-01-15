@@ -2,6 +2,7 @@
   "name": "witcher-craft",
   "version": "0.1.1",
   "private": true,
+  "homepage": "http://localhost:8080/witcher_war_exploded/resources",
   "dependencies": {
     "axios": "^0.18.0",
     "react": "^16.7.0",

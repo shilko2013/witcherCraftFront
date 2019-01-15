@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './IngredientPage.css';
 import axios from "axios";
-import {Link} from "react-router-dom";
+import {Link, Redirect} from "react-router-dom";
 import connect from "react-redux/es/connect/connect";
 
 class IngredientPage extends Component {
@@ -40,6 +40,9 @@ class IngredientPage extends Component {
     }
 
     render() {
+        if (this.state.redirect) {
+            return <Redirect push to={this.state.redirect}/>
+        }
         return (
             <div className={this.props.asideMenuIsShow ? "IngredientPage" : "IngredientPage fullScreen"}>
                 {this.state.error &&
@@ -50,26 +53,35 @@ class IngredientPage extends Component {
                 {this.state.ingredient &&
                 <div className={!this.props.asideMenuIsShow ? "pageContent" : "pageContent pageContentNotFullScreen"}>
                     <h1>{this.state.ingredient.name}</h1>
-                    <img src={"http://localhost:8080/witcher_war_exploded/component/" + this.state.ingredient.id + "/image"}/>
+                    {this.isEditor() &&
+                    <button onClick={() => this.setState({
+                        ...this.state,
+                        redirect: '/edit/ingredient/' + this.state.ingredient.id
+                    })}>Редактировать ингридиент</button>
+                    }
+                    <img
+                        src={"http://localhost:8080/witcher_war_exploded/component/" + this.state.ingredient.id + "/image"}/>
                     <div className="categoryDiv">
                         {this.state.ingredient.categoryComponent.name}
-                        <br/>
-                        {this.state.ingredient.categoryComponent.information}
                     </div>
                     <div className="infoDiv">
+                        <br/>
                         Цена: {this.state.ingredient.price}
                         <br/>
                         Вес: {this.state.ingredient.weight}
+                        <br/>
                     </div>
                     <div className="draftsDiv">
-                        Рецепты из которых можно скрафтить:
+                        <br/>
+                        Рецепты в которых используется:
                         <br/>
                         {this.state.ingredient.drafts.map((elem, index) =>
-                            <Link to={'/draft/'+elem.id}>
-                                {index+1} рецепт
+                            <Link to={'/draft/' + elem.id}>
+                                {elem.thing.name}
                             </Link>
                         )}
                     </div>
+                    <br/>
                     <div className="descriptionDiv">
                         {this.state.ingredient.descriptionComponent.description}
                     </div>
