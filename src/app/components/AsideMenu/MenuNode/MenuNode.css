@@ -25,20 +25,20 @@
 
 .MenuNode span.triangle {
     display: inline-block;
-    -webkit-transition-duration: 0.8s;
-    -moz-transition-duration: 0.8s;
-    -o-transition-duration: 0.8s;
-    transition-duration: 0.8s;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
     transition-timing-function: ease-out;
 }
 
 .MenuNode:hover span.triangle {
 
-    -webkit-transform: rotate(-630deg);
-    -moz-transform: rotate(-630deg);
-    -o-transform: rotate(-630deg);
-    -ms-transform: rotate(-630deg);
-    transform: rotate(-630deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 
 .MenuNode a {

@@ -80,7 +80,7 @@ class RecipesTable extends Component {
                                                 ...this.state,
                                                 redirect: '/draft/' + element.id
                                             })
-                                        }}>{index} рецепт</a>
+                                        }}>{index+1} рецепт</a>
                                         <br/>
                                     </div>
                                 )}

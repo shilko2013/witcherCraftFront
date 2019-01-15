@@ -50,7 +50,7 @@ class AsideMenu extends Component {
                     }
                     <MenuNode text="Алхимия"
                               nodes={["Ингридиенты", "Рецепты", "Предметы"]}
-                              nodeHrefs={["/ingredients", "/recipes", "3"]}/>
+                              nodeHrefs={["/ingredients", "/recipes", "/alchemyThings"]}/>
                     <MenuNode text="Ремесло"
                               nodes={["Компоненты", "Чертежи", "Предметы"]}
                               nodeHrefs={["4", "5", "6"]}/>

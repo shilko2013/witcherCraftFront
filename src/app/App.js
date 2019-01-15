@@ -12,6 +12,8 @@ import IngredientPage from "./pages/IngredientPage/IngredientPage";
 import IngredientEditPage from "./pages/IngredientEditPage/IngredientEditPage";
 import IngredientAddPage from "./pages/IngredientAddPage/IngredientAddPage";
 import RecipesPage from "./pages/RecipesPage/RecipesPage";
+import Recipe from "./pages/Recipe/Recipe";
+import Things from "./pages/Things/Things";
 
 class App extends Component {
 
@@ -60,6 +62,26 @@ class App extends Component {
                 <IngredientEditPage ingredientId={match.params.id}/>
             );
         };
+        const RecipeWithId = ({match}) => {
+            return (
+                <Recipe draftId={match.params.id}/>
+            );
+        };
+        const IngredientAddPageWithHeight = (props) => {
+            return (
+                <IngredientAddPage height={this.state.windowHeight}/>
+            );
+        };
+        const RecipesPageWithHeight = (props) => {
+            return (
+                <RecipesPage height={this.state.windowHeight}/>
+            );
+        };
+        const ThingsWithHeight = (props) => {
+            return (
+                <Things height={this.state.windowHeight}/>
+            );
+        };
         return (
             <div className="rootApp">
                 <Favicon url={[logoImg]}/>
@@ -70,8 +92,10 @@ class App extends Component {
                     <Route path='/ingredients' component={IngredientsWithHeight}/>
                     <Route path='/ingredient/:id' component={IngredientWithId}/>
                     <Route path='/edit/ingredient/:id' component={IngredientWithIdEdit}/>
-                    <Route path='/add/ingredient' component={IngredientAddPage}/>
-                    <Route path='/recipes' component={RecipesPage}/>
+                    <Route path='/add/ingredient' component={IngredientAddPageWithHeight}/>
+                    <Route path='/recipes' component={RecipesPageWithHeight}/>
+                    <Route path='/draft/:id' component={RecipeWithId}/>
+                    <Route path='/alchemyThings' component={ThingsWithHeight}/>
                     <Route component={WelcomeWithHeight}/>
                 </Switch>
             </div>

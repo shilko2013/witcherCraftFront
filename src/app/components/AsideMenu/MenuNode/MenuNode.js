@@ -57,7 +57,7 @@ class MenuNode extends Component {
                                 alt=""/>
                             < div className="nodeText unselectable">
                                 {this.state.text+' '}
-                                <span className="triangle">⚔</span>
+                                <span className="triangle">▶</span>
                             </div>
                         </div>
                     }

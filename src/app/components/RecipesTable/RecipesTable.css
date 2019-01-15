@@ -5,3 +5,11 @@
 .RecipesTable .dataTable td {
     cursor: auto;
 }
+
+.RecipesTable .dataTable td:nth-child(even) {
+    cursor: pointer;
+}
+
+.RecipesTable .dataTable td:nth-child(even):hover {
+    background: #191d22;
+}

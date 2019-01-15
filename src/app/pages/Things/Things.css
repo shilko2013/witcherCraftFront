@@ -3,7 +3,7 @@ h1 {
     text-align: center;
 }
 
-.RecipesPage {
+.Things {
     height: 100vh;
     overflow: scroll;
     -ms-overflow-style: none;
@@ -19,11 +19,11 @@ h1 {
     transition-timing-function: linear;
 }
 
-.RecipesPage p {
+.Things p {
     padding: 0 0 0 10px;
 }
 
-.RecipesPage::-webkit-scrollbar {
+.Things::-webkit-scrollbar {
     width: 0;
     background: transparent;
 }
@@ -34,7 +34,7 @@ h1 {
 
 
 
-.RecipesPage button {
+.Things button {
     background: #5e6873;
     color: #c4c4c4;
     cursor: pointer;
@@ -42,13 +42,8 @@ h1 {
     margin-bottom: 10px;
 }
 
-.RecipesPage button:hover {
+.Things button:hover {
     background: #90a1ac;
     color: #ffffff;
-    cursor: pointer;
-}
-
-.RecipesPage a {
-    text-decoration: inherit;
     cursor: pointer;
 }
