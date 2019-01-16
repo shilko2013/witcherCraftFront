@@ -1,0 +1,57 @@
+h1 {
+  margin: 0 0 10px;
+  text-align: center;
+}
+
+.ThingAddPage {
+  height: 100vh;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+  position: relative;
+  top: 10px;
+  left: 210px;
+
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+}
+
+.ThingAddPage p {
+  padding: 0 0 0 10px;
+}
+
+.ThingAddPage::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+.fullScreen {
+  left: 0;
+}
+
+.pageContentNotFullScreen {
+  margin-right: 210px;
+}
+
+.ThingAddPage img {
+  float: right;
+  width: 200px;
+  height: 250px;
+}
+
+.ThingAddPage button {
+  background: #5e6873;
+  color: #c4c4c4;
+  cursor: pointer;
+  margin-left: 50px;
+  margin-bottom: 10px;
+}
+
+.ThingAddPage button:hover {
+  background: #90a1ac;
+  color: #ffffff;
+  cursor: pointer;
+}

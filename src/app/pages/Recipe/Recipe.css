@@ -45,6 +45,7 @@
 
 .Recipe img {
     float: right;
+    margin-right: 20px;
     width: 200px;
     height: 250px;
 }

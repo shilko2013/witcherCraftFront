@@ -72,6 +72,7 @@ class ThingPage extends Component {
                         Вес: {this.state.thing.weight}
                         <br/>
                     </div>
+                    {this.state.thing.drafts && this.state.thing.drafts.length &&
                     <div className="draftsDiv">
                         <br/>
                         Рецепты из которых можно скрафтить:
@@ -85,6 +86,7 @@ class ThingPage extends Component {
                             </div>
                         )}
                     </div>
+                    }
                     {this.state.thing.effects && this.state.thing.effects.length &&
                     <div className="effectsDiv">
                         <br/>
@@ -93,7 +95,7 @@ class ThingPage extends Component {
                         <ul>
                             {this.state.thing.effects.map((elem, index) =>
                                 <li>
-                                    {elem.information}
+                                    {elem.name}
                                 </li>
                             )}
                         </ul>
