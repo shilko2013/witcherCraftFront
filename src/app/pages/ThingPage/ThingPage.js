@@ -38,7 +38,28 @@ class ThingPage extends Component {
                     error: 'Данные не могут быть загружены!'
                 });
             });
-    }
+    };
+
+    deleteThing = () => {
+        return axios.post("http://localhost:8080/witcher_war_exploded/thing/api/delete/" + this.props.thingId);
+    };
+
+    deleteThingSubmit = () => {
+        this.deleteThing()
+            .then(response => {
+                this.setState({
+                    ...this.state,
+                    error: 'Предмет успешно удален'
+                });
+            })
+            .catch(error => {
+
+                this.setState({
+                    ...this.state,
+                    error: 'Сервер временно недоступен'
+                });
+            })
+    };
 
     render() {
         if (this.state.redirect) {
@@ -59,6 +80,9 @@ class ThingPage extends Component {
                         ...this.state,
                         redirect: '/edit/alchemyThing/' + this.state.thing.id
                     })}>Редактировать предмет</button>
+                    }
+                    {this.isEditor() &&
+                    <button onClick={() => this.deleteThingSubmit()}>Удалить предмет</button>
                     }
                     <img
                         src={"http://localhost:8080/witcher_war_exploded/thing/" + this.state.thing.id + "/image"}/>

@@ -37,7 +37,28 @@ class IngredientPage extends Component {
                     error: 'Данные не могут быть загружены!'
                 });
             });
-    }
+    };
+
+    deleteIngredient = () => {
+        return axios.post("http://localhost:8080/witcher_war_exploded/component/api/delete/" + this.props.ingredientId);
+    };
+
+    deleteIngredientSubmit = () => {
+        this.deleteIngredient()
+            .then(response => {
+                this.setState({
+                    ...this.state,
+                    error: 'Ингредиент успешно удален'
+                });
+            })
+            .catch(error => {
+
+                this.setState({
+                    ...this.state,
+                    error: 'Сервер временно недоступен'
+                });
+            })
+    };
 
     render() {
         if (this.state.redirect) {
@@ -59,6 +80,9 @@ class IngredientPage extends Component {
                         redirect: '/edit/ingredient/' + this.state.ingredient.id
                     })}>Редактировать ингридиент</button>
                     }
+                    {this.isEditor() &&
+                    <button onClick={() => this.deleteIngredientSubmit()}>Удалить ингредиент</button>
+                    }
                     <img
                         src={"http://localhost:8080/witcher_war_exploded/component/" + this.state.ingredient.id + "/image"}/>
                     <div className="categoryDiv">
@@ -71,6 +95,7 @@ class IngredientPage extends Component {
                         Вес: {this.state.ingredient.weight}
                         <br/>
                     </div>
+                    {this.state.ingredient.drafts && this.state.ingredient.drafts.length !== 0 &&
                     <div className="draftsDiv">
                         <br/>
                         Рецепты в которых используется:
@@ -81,6 +106,7 @@ class IngredientPage extends Component {
                             </Link>
                         )}
                     </div>
+                    }
                     <br/>
                     <div className="descriptionDiv">
                         {this.state.ingredient.descriptionComponent.description}

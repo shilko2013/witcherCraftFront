@@ -18,7 +18,6 @@ import ThingPage from "./pages/ThingPage/ThingPage";
 import ThingAddPage from "./pages/ThingAddPage/ThingAddPage";
 import ThingEditPage from "./pages/ThingEditPage/ThingEditPage";
 import RecipeAddPage from "./pages/RecipeAddPage/RecipeAddPage";
-import RecipeEditPage from "./pages/RecipeEditPage/RecipeEditPage";
 
 class App extends Component {
 

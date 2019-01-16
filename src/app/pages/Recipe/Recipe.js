@@ -39,6 +39,27 @@ class Recipe extends Component {
             });
     }
 
+    deleteDraft = () => {
+        return axios.post("http://localhost:8080/witcher_war_exploded/draft/api/delete/" + this.props.draftId);
+    };
+
+    deleteDraftSubmit = () => {
+        this.deleteDraft()
+            .then(response => {
+                this.setState({
+                    ...this.state,
+                    error: 'Рецепт успешно удален'
+                });
+            })
+            .catch(error => {
+
+                this.setState({
+                    ...this.state,
+                    error: 'Сервер временно недоступен'
+                });
+            })
+    };
+
     render() {
         if (this.state.redirect) {
             return <Redirect push to={this.state.redirect}/>
@@ -56,6 +77,9 @@ class Recipe extends Component {
                         ...this.state,
                         redirect: '/thing/' + this.state.draft.thing.id
                     })}>{this.state.draft.thing.name}</h1>
+                    {this.isEditor() &&
+                    <button onClick={() => this.deleteDraftSubmit()}>Удалить рецепт</button>
+                    }
                     <img
                         src={"http://localhost:8080/witcher_war_exploded/thing/" + this.state.draft.id + "/image"}/>
                     <div className="draftsDiv">
