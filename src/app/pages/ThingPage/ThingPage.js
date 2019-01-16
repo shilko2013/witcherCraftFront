@@ -72,7 +72,7 @@ class ThingPage extends Component {
                         Вес: {this.state.thing.weight}
                         <br/>
                     </div>
-                    {this.state.thing.drafts && this.state.thing.drafts.length &&
+                    {this.state.thing.drafts && this.state.thing.drafts.length !== 0 &&
                     <div className="draftsDiv">
                         <br/>
                         Рецепты из которых можно скрафтить:
@@ -87,7 +87,7 @@ class ThingPage extends Component {
                         )}
                     </div>
                     }
-                    {this.state.thing.effects && this.state.thing.effects.length &&
+                    {this.state.thing.effects && this.state.thing.effects.length !== 0 &&
                     <div className="effectsDiv">
                         <br/>
                         Эффекты:
