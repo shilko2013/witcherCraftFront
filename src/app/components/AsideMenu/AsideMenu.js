@@ -40,7 +40,7 @@ class AsideMenu extends Component {
         return (
             <div>
                 <aside className={this.props.isShow ? 'AsideMenu' : 'AsideMenu isHidden'}
-                style={{height: this.props.height}}>
+                       style={{height: this.props.height}}>
                     <LogoRef/>
                     {!this.isLogin() &&
                     <LoginNode text="Вход/регистрация" src={loginImg}/>
@@ -71,6 +71,17 @@ class AsideMenu extends Component {
                     <MenuNode text="Аналитика сайта"
                               isExternal={true}
                               href={"https://metrika.yandex.ru/dashboard?id=" + ID_YANDEX_METRIKA}/>
+                    <div>
+                        {this.props.role === 'USER_STATUS_READER' &&
+                        <div> Ваши права: читатель</div>
+                        }
+                        {this.props.role === 'USER_STATUS_EDITOR' &&
+                        <div> Ваши права: редактор</div>
+                        }
+                        {this.props.role === 'USER_STATUS_ADMIN' &&
+                        <div> Ваши права: администратор</div>
+                        }
+                    </div>
                 </aside>
                 <button className={this.props.isShow ? "hideButton" : "hideButton buttonMenuIsHidden"}
                         onClick={this.props.switchShow}>⚔

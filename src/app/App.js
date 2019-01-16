@@ -17,6 +17,8 @@ import Things from "./pages/Things/Things";
 import ThingPage from "./pages/ThingPage/ThingPage";
 import ThingAddPage from "./pages/ThingAddPage/ThingAddPage";
 import ThingEditPage from "./pages/ThingEditPage/ThingEditPage";
+import RecipeAddPage from "./pages/RecipeAddPage/RecipeAddPage";
+import RecipeEditPage from "./pages/RecipeEditPage/RecipeEditPage";
 
 class App extends Component {
 
@@ -100,6 +102,11 @@ class App extends Component {
                 <ThingEditPage thingId={match.params.id}/>
             );
         };
+        const RecipeAddWithHeight = (props) => {
+            return (
+                <RecipeAddPage height={this.state.windowHeight}/>
+            );
+        };
         return (
             <div className="rootApp">
                 <Favicon url={[logoImg]}/>
@@ -117,6 +124,7 @@ class App extends Component {
                     <Route path='/thing/:id' component={ThingPageWithId}/>
                     <Route path='/add/alchemyThing' component={ThinkAddPageWithHeight}/>
                     <Route path='/edit/alchemyThing/:id' component={ThingEditPageWithId}/>
+                    <Route path='/add/recipe' component={RecipeAddWithHeight}/>
                     <Route component={WelcomeWithHeight}/>
                 </Switch>
             </div>

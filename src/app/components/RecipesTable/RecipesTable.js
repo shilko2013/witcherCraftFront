@@ -59,6 +59,7 @@ class RecipesTable extends Component {
                     <tbody>
                     {
                         this.state.things.map((elem, i) =>
+                            elem.drafts.length !== 0 &&
                             <tr>
                                 <td>
                                     <img
@@ -74,16 +75,16 @@ class RecipesTable extends Component {
                                 </td>
                                 <td>
                                     {elem.drafts.map((element, index) =>
-                                    <div>
-                                        <a onClick={() => {
-                                            this.setState({
-                                                ...this.state,
-                                                redirect: '/draft/' + element.id
-                                            })
-                                        }}>{index+1} рецепт</a>
-                                        <br/>
-                                    </div>
-                                )}
+                                        <div>
+                                            <a onClick={() => {
+                                                this.setState({
+                                                    ...this.state,
+                                                    redirect: '/draft/' + element.id
+                                                })
+                                            }}>{index + 1} рецепт</a>
+                                            <br/>
+                                        </div>
+                                    )}
                                 </td>
                             </tr>
                         )

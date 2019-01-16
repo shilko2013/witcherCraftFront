@@ -56,12 +56,6 @@ class Recipe extends Component {
                         ...this.state,
                         redirect: '/thing/' + this.state.draft.thing.id
                     })}>{this.state.draft.thing.name}</h1>
-                    {this.isEditor() &&
-                    <button onClick={() => this.setState({
-                        ...this.state,
-                        redirect: '/edit/recipe/' + this.state.draft.id
-                    })}>Редактировать рецепт</button>
-                    }
                     <img
                         src={"http://localhost:8080/witcher_war_exploded/thing/" + this.state.draft.id + "/image"}/>
                     <div className="draftsDiv">
