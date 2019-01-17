@@ -53,7 +53,12 @@ class App extends Component {
         };
         const IngredientsWithHeight = (props) => {
             return (
-                <Ingredients height={this.state.windowHeight}/>
+                <Ingredients isAlchemy={true} height={this.state.windowHeight}/>
+            );
+        };
+        const ComponentsWithHeight = (props) => {
+            return (
+                <Ingredients isAlchemy={false} height={this.state.windowHeight}/>
             );
         };
         const IngredientWithId = ({match}) => {
@@ -73,7 +78,12 @@ class App extends Component {
         };
         const IngredientAddPageWithHeight = (props) => {
             return (
-                <IngredientAddPage height={this.state.windowHeight}/>
+                <IngredientAddPage isAlchemy={true} height={this.state.windowHeight}/>
+            );
+        };
+        const ComponentAddPageWithHeight = (props) => {
+            return (
+                <IngredientAddPage isAlchemy={false} height={this.state.windowHeight}/>
             );
         };
         const RecipesPageWithHeight = (props) => {
@@ -114,9 +124,11 @@ class App extends Component {
                 <Switch>
                     <Route exact path='/' component={WelcomeWithHeight}/>
                     <Route path='/ingredients' component={IngredientsWithHeight}/>
+                    <Route path='/components' component={ComponentsWithHeight}/> //
                     <Route path='/ingredient/:id' component={IngredientWithId}/>
                     <Route path='/edit/ingredient/:id' component={IngredientWithIdEdit}/>
                     <Route path='/add/ingredient' component={IngredientAddPageWithHeight}/>
+                    <Route path='/add/component' component={ComponentAddPageWithHeight}/> //
                     <Route path='/recipes' component={RecipesPageWithHeight}/>
                     <Route path='/draft/:id' component={RecipeWithId}/>
                     <Route path='/alchemyThings' component={ThingsWithHeight}/>

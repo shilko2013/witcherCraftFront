@@ -14,7 +14,7 @@ class IngredientsTable extends Component {
     }
 
     getIngredients = () => {
-        return axios.get("http://localhost:8080/witcher_war_exploded/component/components/true");
+        return axios.get("http://localhost:8080/witcher_war_exploded/component/components/"+this.props.isAlchemy);
     };
 
     componentDidMount() {
@@ -46,7 +46,7 @@ class IngredientsTable extends Component {
                     <thead>
                     <tr>
                         <th>Изображение</th>
-                        <th>Название ингридиента</th>
+                        <th>Название {this.props.isAlchemy ? 'ингридиента' : 'компонента'}</th>
                         <th>Название категории</th>
                         <th>Цена</th>
                         <th>Вес</th>

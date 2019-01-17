@@ -22,16 +22,16 @@ class Ingredients extends Component {
         return (
             <div className={this.props.asideMenuIsShow ? "Ingredients" : "Ingredients fullScreen"}
                  style={{height: this.props.height}}>
-                <h1>Ингридиенты</h1>
+                <h1>{this.props.isAlchemy ? 'Ингридиенты' : 'Компоненты'}</h1>
                 {this.isEditor() &&
                 <button onClick={() => {
                     this.setState({
                         ...this.state,
-                        redirect: '/add/ingredient'
+                        redirect: this.props.isAlchemy ? '/add/ingredient': '/add/component'
                     });
-                }}>Добавить ингредиент</button>
+                }}>Добавить {this.props.isAlchemy ? 'ингридиент' : 'компонент'}</button>
                 }
-                <IngredientsTable/>
+                <IngredientsTable isAlchemy={this.props.isAlchemy}/>
             </div>
         )
     }

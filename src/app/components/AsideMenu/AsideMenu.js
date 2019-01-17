@@ -53,7 +53,7 @@ class AsideMenu extends Component {
                               nodeHrefs={["/ingredients", "/recipes", "/alchemyThings"]}/>
                     <MenuNode text="Ремесло"
                               nodes={["Компоненты", "Чертежи", "Предметы"]}
-                              nodeHrefs={["4", "5", "6"]}/>
+                              nodeHrefs={["/components", "5", "6"]}/>
                     <CraftRef/>
                     {this.isAdmin() &&
                     <MenuNode text="Панель управления"

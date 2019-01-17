@@ -78,10 +78,10 @@ class IngredientPage extends Component {
                     <button onClick={() => this.setState({
                         ...this.state,
                         redirect: '/edit/ingredient/' + this.state.ingredient.id
-                    })}>Редактировать ингридиент</button>
+                    })}>Редактировать</button>
                     }
                     {this.isEditor() &&
-                    <button onClick={() => this.deleteIngredientSubmit()}>Удалить ингредиент</button>
+                    <button onClick={() => this.deleteIngredientSubmit()}>Удалить</button>
                     }
                     <img
                         src={"http://localhost:8080/witcher_war_exploded/component/" + this.state.ingredient.id + "/image"}/>

@@ -4,9 +4,10 @@
     <list default="true" id="53c9989b-050b-408e-8ddb-d0991324063f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/IngredientPage/IngredientPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/IngredientPage/IngredientPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/Recipe/Recipe.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/Recipe/Recipe.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/ThingPage/ThingPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/ThingPage/ThingPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/AsideMenu/AsideMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/AsideMenu/AsideMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/IngredientsTable/IngredientsTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/IngredientsTable/IngredientsTable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/IngredientAddPage/IngredientAddPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/IngredientAddPage/IngredientAddPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/Ingredients/Ingredients.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/Ingredients/Ingredients.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,31 +21,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/pages/RecipeAddPage/RecipeAddPage.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="56" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/pages/Recipe/Recipe.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="48" column="31" lean-forward="true" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/pages/Ingredients/Ingredients.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="315">
+              <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/app/components/IngredientsTable/IngredientsTable.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="51" column="36" lean-forward="true" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="36" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -53,22 +45,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/pages/ThingAddPage/ThingAddPage.js">
+        <entry file="file://$PROJECT_DIR$/src/app/pages/IngredientAddPage/IngredientAddPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="165" column="26" selection-start-line="165" selection-start-column="26" selection-end-line="166" selection-end-column="59" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/pages/RecipeAddPage/RecipeAddPage.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" selection-start-line="6" selection-end-line="131" selection-end-column="2" />
+            <state relative-caret-position="810">
+              <caret line="57" column="90" selection-start-line="57" selection-start-column="90" selection-end-line="57" selection-end-column="90" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -79,7 +59,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/pages/Things/Things.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
+            <state relative-caret-position="525">
               <caret line="39" column="14" selection-start-line="39" selection-start-column="14" selection-end-line="44" selection-end-column="2" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
@@ -91,7 +71,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/pages/ThingPage/ThingPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
+            <state relative-caret-position="510">
               <caret line="39" column="15" lean-forward="true" selection-start-line="39" selection-start-column="15" selection-end-line="39" selection-end-column="15" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
@@ -103,8 +83,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="64" selection-start-line="19" selection-start-column="64" selection-end-line="19" selection-end-column="64" />
+            <state relative-caret-position="465">
+              <caret line="85" column="51" selection-start-line="85" selection-start-column="51" selection-end-line="85" selection-end-column="51" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -112,11 +92,35 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/pages/IngredientEditPage/IngredientEditPage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-172">
+              <caret line="25" column="31" lean-forward="true" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/components/AsideMenu/AsideMenu.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="69" column="29" selection-start-line="69" selection-start-column="29" selection-end-line="69" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/pages/IngredientPage/IngredientPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="51" column="19" lean-forward="true" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
+            <state relative-caret-position="225">
+              <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -170,7 +174,6 @@
         <option value="$PROJECT_DIR$/src/app/pages/Ingredient/Ingredient.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/app/pages/Ingredients/Ingredients.css" />
-        <option value="$PROJECT_DIR$/src/app/pages/Ingredients/Ingredients.js" />
         <option value="$PROJECT_DIR$/src/app/actions/InterfaceActions.ts" />
         <option value="$PROJECT_DIR$/src/app/actions/AuthActions.ts" />
         <option value="$PROJECT_DIR$/src/app/reducers/AuthReducer.ts" />
@@ -180,8 +183,6 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/app/pages/IngredientEditPage/IngredientEditPage.js" />
         <option value="$PROJECT_DIR$/src/app/pages/IngredientAddPage/IngredientAddPage.css" />
-        <option value="$PROJECT_DIR$/src/app/pages/IngredientAddPage/IngredientAddPage.js" />
-        <option value="$PROJECT_DIR$/src/app/components/IngredientsTable/IngredientsTable.js" />
         <option value="$PROJECT_DIR$/src/app/components/IngredientsTable/IngredientsTable.css" />
         <option value="$PROJECT_DIR$/src/app/pages/RecipesPage/RecipesPage.js" />
         <option value="$PROJECT_DIR$/src/app/pages/RecipesPage/RecipesPage.css" />
@@ -201,16 +202,19 @@
         <option value="$PROJECT_DIR$/src/app/pages/ThingAddPage/ThingAddPage.js" />
         <option value="$PROJECT_DIR$/src/app/pages/ThingEditPage/ThingEditPage.css" />
         <option value="$PROJECT_DIR$/src/app/pages/ThingEditPage/ThingEditPage.js" />
-        <option value="$PROJECT_DIR$/src/app/components/AsideMenu/AsideMenu.js" />
         <option value="$PROJECT_DIR$/src/app/pages/RecipeAddPage/RecipeAddPage.css" />
         <option value="$PROJECT_DIR$/src/app/components/RecipesTable/RecipesTable.js" />
         <option value="$PROJECT_DIR$/src/app/pages/RecipeAddPage/RecipeAddPage.js" />
         <option value="$PROJECT_DIR$/src/app/pages/RecipeEditPage/RecipeEditPage.css" />
         <option value="$PROJECT_DIR$/src/app/pages/RecipeEditPage/RecipeEditPage.js" />
-        <option value="$PROJECT_DIR$/src/app/App.js" />
         <option value="$PROJECT_DIR$/src/app/pages/ThingPage/ThingPage.js" />
         <option value="$PROJECT_DIR$/src/app/pages/IngredientPage/IngredientPage.js" />
         <option value="$PROJECT_DIR$/src/app/pages/Recipe/Recipe.js" />
+        <option value="$PROJECT_DIR$/src/app/components/AsideMenu/AsideMenu.js" />
+        <option value="$PROJECT_DIR$/src/app/pages/Ingredients/Ingredients.js" />
+        <option value="$PROJECT_DIR$/src/app/pages/IngredientAddPage/IngredientAddPage.js" />
+        <option value="$PROJECT_DIR$/src/app/App.js" />
+        <option value="$PROJECT_DIR$/src/app/components/IngredientsTable/IngredientsTable.js" />
       </list>
     </option>
   </component>
@@ -554,7 +558,8 @@
       <workItem from="1547517400734" duration="5959000" />
       <workItem from="1547546097090" duration="14581000" />
       <workItem from="1547571016675" duration="12903000" />
-      <workItem from="1547646152528" duration="18568000" />
+      <workItem from="1547646152528" duration="18975000" />
+      <workItem from="1547688362672" duration="2901000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1546344083941</created>
@@ -780,11 +785,18 @@
       <option name="project" value="LOCAL" />
       <updated>1547666110158</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="delete buttons ready.">
+      <created>1547677213205</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1547677213205</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="210867000" />
+    <option name="totallyTimeSpent" value="214175000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1" width="1920" height="1054" extended-state="6" />
@@ -797,7 +809,7 @@
       <window_info anchor="bottom" id="Messages" order="0" weight="0.32972974" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32972974" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49920928" weight="0.32972974" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49920928" visible="true" weight="0.32972974" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -805,7 +817,7 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007907" side_tool="true" weight="0.32972974" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49973643" visible="true" weight="0.3264865" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49973643" weight="0.3264865" />
       <window_info anchor="bottom" id="TypeScript" order="12" weight="0.32972974" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -816,7 +828,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="LoginNode ready." />
     <MESSAGE value="AsideMenu update ready." />
     <MESSAGE value="logout ready." />
     <MESSAGE value="css for aside in process." />
@@ -841,7 +852,8 @@
     <MESSAGE value="ThingAddPage added." />
     <MESSAGE value="ThingEditPage added." />
     <MESSAGE value="recipes pages added." />
-    <option name="LAST_COMMIT_MESSAGE" value="recipes pages added." />
+    <MESSAGE value="delete buttons ready." />
+    <option name="LAST_COMMIT_MESSAGE" value="delete buttons ready." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/app/actions/InterfaceActions.ts">
@@ -962,16 +974,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/IngredientsTable/IngredientsTable.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="94" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/components/RecipesTable/RecipesTable.css">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1048,16 +1050,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/pages/IngredientAddPage/IngredientAddPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="6" selection-start-line="6" selection-end-line="139" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/pages/RecipesPage/RecipesPage.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="780">
@@ -1069,16 +1061,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/pages/IngredientEditPage/IngredientEditPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="44" column="5" selection-start-line="14" selection-start-column="3" selection-end-line="44" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1100,16 +1082,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="72" column="19" selection-start-line="72" selection-start-column="19" selection-end-line="72" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/AsideMenu/AsideMenu.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="76" column="25" selection-start-line="76" selection-start-column="25" selection-end-line="76" selection-end-column="25" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -1143,17 +1115,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/pages/ThingAddPage/ThingAddPage.css">
+    <entry file="file://$PROJECT_DIR$/src/app/pages/RecipeEditPage/RecipeEditPage.css" />
+    <entry file="file://$PROJECT_DIR$/src/app/pages/RecipeEditPage/RecipeEditPage.js" />
+    <entry file="file://$PROJECT_DIR$/src/app/pages/RecipeAddPage/RecipeAddPage.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+        <state>
+          <caret selection-end-line="56" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/pages/Recipe/Recipe.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="48" column="31" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/pages/ThingAddPage/ThingAddPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
+        <state relative-caret-position="2415">
           <caret line="165" column="26" selection-start-line="165" selection-start-column="26" selection-end-line="166" selection-end-column="59" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/pages/RecipeAddPage/RecipeAddPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="6" selection-start-line="6" selection-end-line="131" selection-end-column="2" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -1162,72 +1156,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/pages/Things/Things.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
+        <state relative-caret-position="525">
           <caret line="39" column="14" selection-start-line="39" selection-start-column="14" selection-end-line="44" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/pages/RecipeEditPage/RecipeEditPage.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="52" column="15" selection-start-line="52" selection-start-column="15" selection-end-line="52" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/pages/RecipeAddPage/RecipeAddPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="131" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/pages/RecipeEditPage/RecipeEditPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="676">
-          <caret line="91" column="46" selection-start-line="91" selection-start-column="46" selection-end-line="91" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/pages/RecipeAddPage/RecipeAddPage.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="56" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/pages/Ingredients/Ingredients.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="64" selection-start-line="19" selection-start-column="64" selection-end-line="19" selection-end-column="64" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/pages/Recipe/Recipe.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="48" column="31" lean-forward="true" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -1236,7 +1166,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/pages/ThingPage/ThingPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
+        <state relative-caret-position="510">
           <caret line="39" column="15" lean-forward="true" selection-start-line="39" selection-start-column="15" selection-end-line="39" selection-end-column="15" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
@@ -1244,10 +1174,77 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/pages/ThingAddPage/ThingAddPage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/pages/IngredientPage/IngredientPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="51" column="19" lean-forward="true" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
+        <state relative-caret-position="225">
+          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/AsideMenu/AsideMenu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="69" column="29" selection-start-line="69" selection-start-column="29" selection-end-line="69" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/pages/Ingredients/Ingredients.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="85" column="51" selection-start-line="85" selection-start-column="51" selection-end-line="85" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/pages/IngredientEditPage/IngredientEditPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-172">
+          <caret line="25" column="31" lean-forward="true" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/pages/IngredientAddPage/IngredientAddPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="57" column="90" selection-start-line="57" selection-start-column="90" selection-end-line="57" selection-end-column="90" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/IngredientsTable/IngredientsTable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="51" column="36" lean-forward="true" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="36" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
