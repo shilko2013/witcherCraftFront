@@ -15,7 +15,8 @@
     "react-favicon": "latest",
     "primereact": "latest",
     "classnames": "2.2.6",
-    "history": "latest"
+    "history": "latest",
+    "react-d3-graph": "latest"
   },
   "scripts": {
     "start": "react-scripts start",
