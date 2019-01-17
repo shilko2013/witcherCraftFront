@@ -6,12 +6,14 @@ export function authReducer(state = {role: ""}, action: any) {
         case AUTH_LOGIN:
                     return {
                         ...state,
-                        role: action.role
+                        role: action.role,
+                        error: ''
                     };
         case AUTH_LOGOUT:
             return {
                 ...state,
-                role: ''
+                role: '',
+                error: action.error
             };
         default: return state;
     }

@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import './ThingEditPage.css';
-import axios from "axios";
 import connect from "react-redux/es/connect/connect";
 import {Redirect} from "react-router-dom";
+import {axiosInstance} from "../../../index";
 
 class ThingEditPage extends Component {
     constructor(props) {
@@ -16,7 +16,7 @@ class ThingEditPage extends Component {
     };
 
     getThing = () => {
-        return axios.get("http://localhost:8080/witcher_war_exploded/thing/" + this.props.thingId);
+        return axiosInstance.get("/thing/" + this.props.thingId);
     };
 
     componentDidMount() {
@@ -52,7 +52,7 @@ class ThingEditPage extends Component {
         params.append('type', this.state.type);
         params.append('effects', this.state.effect);
         params.append('image', this.state.file);
-        axios.post("http://localhost:8080/witcher_war_exploded/thing/api/edit", params, {
+        axiosInstance.post("/thing/api/edit", params, {
             responseType: 'text',
             withCredentials: true,
             headers: {

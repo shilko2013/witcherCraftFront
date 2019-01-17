@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import './IngredientEditPage.css';
 import connect from "react-redux/es/connect/connect";
 import {Link, Redirect} from "react-router-dom";
-import axios from "axios";
+import {axiosInstance} from "../../../index";
 
 class IngredientEditPage extends Component {
     constructor(props) {
@@ -18,7 +18,7 @@ class IngredientEditPage extends Component {
     };
 
     getIngredient = () => {
-        return axios.get("http://localhost:8080/witcher_war_exploded/component/" + this.props.ingredientId);
+        return axiosInstance.get("/component/" + this.props.ingredientId);
     };
 
     componentDidMount() {
@@ -52,7 +52,7 @@ class IngredientEditPage extends Component {
         params.append('description', this.state.description);
         params.append('category', this.state.category);
         params.append('image', this.state.file);
-        axios.post("http://localhost:8080/witcher_war_exploded/component/api/edit", params, {
+        axiosInstance.post("/component/api/edit", params, {
             responseType: 'text',
             withCredentials: true,
             headers: {

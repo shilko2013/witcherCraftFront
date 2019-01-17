@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import axios from "axios";
 import {Redirect} from "react-router-dom";
 import connect from "react-redux/es/connect/connect";
+import {axiosInstance} from "../../../index";
 
 class AlchemyThingTable extends Component {
   constructor(props) {
@@ -13,7 +13,7 @@ class AlchemyThingTable extends Component {
   }
 
   getThings = () => {
-    return axios.get("http://localhost:8080/witcher_war_exploded/thing/things/"+this.props.isAlchemy);
+    return axiosInstance.get("/thing/things/"+this.props.isAlchemy);
   };
 
   componentDidMount() {

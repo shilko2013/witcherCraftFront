@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import './ThingPage.css';
-import axios from "axios";
 import {Link, Redirect} from "react-router-dom";
 import connect from "react-redux/es/connect/connect";
+import {axiosInstance} from "../../../index";
 
 class ThingPage extends Component {
     constructor(props) {
@@ -20,7 +20,7 @@ class ThingPage extends Component {
     };
 
     getThing = () => {
-        return axios.get("http://localhost:8080/witcher_war_exploded/thing/" + this.props.thingId);
+        return axiosInstance.get("/thing/" + this.props.thingId);
     };
 
     componentDidMount() {
@@ -41,7 +41,7 @@ class ThingPage extends Component {
     };
 
     deleteThing = () => {
-        return axios.post("http://localhost:8080/witcher_war_exploded/thing/api/delete/" + this.props.thingId);
+        return axiosInstance.post("/thing/api/delete/" + this.props.thingId);
     };
 
     deleteThingSubmit = () => {

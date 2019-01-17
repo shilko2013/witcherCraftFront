@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import './RecipeAddPage.css';
-import axios from "axios";
 import {Redirect} from "react-router-dom";
 import connect from "react-redux/es/connect/connect";
+import {axiosInstance} from "../../../index";
 
 class RecipeAddPage extends Component {
     constructor(props) {
@@ -22,7 +22,7 @@ class RecipeAddPage extends Component {
         params.append('thing', this.state.name);
         params.append('components', this.state.component);
         params.append('information', this.state.information);
-        axios.post("http://localhost:8080/witcher_war_exploded/draft/api/add", params, {
+        axiosInstance.post("/draft/api/add", params, {
             responseType: 'text',
             withCredentials: true,
             headers: {

@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import './IngredientsTable.css';
-import axios from "axios";
 import connect from "react-redux/es/connect/connect";
 import {Redirect} from "react-router-dom";
+import {axiosInstance} from "../../../index";
 
 class IngredientsTable extends Component {
     constructor(props) {
@@ -14,7 +14,7 @@ class IngredientsTable extends Component {
     }
 
     getIngredients = () => {
-        return axios.get("http://localhost:8080/witcher_war_exploded/component/components/"+this.props.isAlchemy);
+        return axiosInstance.get("/component/components/"+this.props.isAlchemy);
     };
 
     componentDidMount() {
@@ -54,7 +54,7 @@ class IngredientsTable extends Component {
                     </thead>
                     <tbody>
                     {
-                        this.state.ingredients.map((elem, i) =>
+                        this.state.ingredients && this.state.ingredients.map((elem, i) =>
                             <tr onClick={() => {
                                 this.setState({
                                     ...this.state,

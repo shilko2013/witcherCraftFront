@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import './Recipe.css';
-import axios from "axios";
 import {Link, Redirect} from "react-router-dom";
 import connect from "react-redux/es/connect/connect";
+import {axiosInstance} from "../../../index";
 
 class Recipe extends Component {
     constructor(props) {
@@ -19,7 +19,7 @@ class Recipe extends Component {
     };
 
     getDraft = () => {
-        return axios.get("http://localhost:8080/witcher_war_exploded/draft/" + this.props.draftId);
+        return axiosInstance.get("/draft/" + this.props.draftId);
     };
 
     componentDidMount() {
@@ -40,7 +40,7 @@ class Recipe extends Component {
     }
 
     deleteDraft = () => {
-        return axios.post("http://localhost:8080/witcher_war_exploded/draft/api/delete/" + this.props.draftId);
+        return axiosInstance.post("/draft/api/delete/" + this.props.draftId);
     };
 
     deleteDraftSubmit = () => {

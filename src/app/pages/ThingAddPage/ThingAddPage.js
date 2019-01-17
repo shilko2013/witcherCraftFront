@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import './ThingAddPage.css';
-import axios from "axios";
 import {Redirect} from "react-router-dom";
 import connect from "react-redux/es/connect/connect";
+import {axiosInstance} from "../../../index";
 
 class ThingAddPage extends Component {
     constructor(props) {
@@ -28,7 +28,7 @@ class ThingAddPage extends Component {
         params.append('isAlchemy', this.props.isAlchemy);
         params.append('effects', this.state.effect);
         params.append('image', this.state.file);
-        axios.post("http://localhost:8080/witcher_war_exploded/thing/api/add", params, {
+        axiosInstance.post("/thing/api/add", params, {
             responseType: 'text',
             withCredentials: true,
             headers: {

@@ -9,6 +9,8 @@ import {authReducer} from './app/reducers/AuthReducer';
 import {interfaceReducer} from "./app/reducers/InterfaceReducer";
 import {BrowserRouter} from 'react-router-dom';
 import createHistory from 'history/createBrowserHistory';
+import axios from 'axios';
+import {logout} from "./app/actions/AuthActions";
 
 const store = createStore(combineReducers({
     auth: authReducer,
@@ -20,6 +22,21 @@ store.subscribe(() => {
 });
 
 export const history = createHistory();
+
+export const axiosInstance = axios.create({
+    baseURL: 'http://localhost:8080/witcher_war_exploded',
+    timeout: 2000
+});
+
+axios.interceptors.response.use(response => {
+    return response;
+}, error => {
+    console.log(store.getState());
+    if (store.getState().auth.role !== '' && error.response.status === 401) {
+        store.dispatch(logout('Сессия недействительна, пожалуйста, повторите вход'));
+    }
+    return error;
+});
 
 ReactDOM.render(
     <Provider store={store}>

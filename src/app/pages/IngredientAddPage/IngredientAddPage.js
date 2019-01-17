@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import './IngredientAddPage.css';
 import connect from "react-redux/es/connect/connect";
 import {Link, Redirect} from "react-router-dom";
-import axios from "axios";
+import {axiosInstance} from "../../../index";
 
 class IngredientAddPage extends Component {
     constructor(props) {
@@ -26,7 +26,7 @@ class IngredientAddPage extends Component {
         params.append('category', this.state.category);
         params.append('isAlchemy', this.props.isAlchemy);
         params.append('image', this.state.file);
-        axios.post("http://localhost:8080/witcher_war_exploded/component/api/add", params, {
+        axiosInstance.post("/component/api/add", params, {
             responseType: 'text',
             withCredentials: true,
             headers: {

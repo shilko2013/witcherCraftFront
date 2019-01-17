@@ -8,8 +8,9 @@ export function login(role: any, error = '') {
     }
 }
 
-export function logout() {
+export function logout(error = '') {
     return {
-        type: AUTH_LOGOUT
+        type: AUTH_LOGOUT,
+        error: error
     }
 }

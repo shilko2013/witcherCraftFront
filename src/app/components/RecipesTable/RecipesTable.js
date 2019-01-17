@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './RecipesTable.css';
-import axios from "axios";
 import {Link, Redirect} from "react-router-dom";
+import {axiosInstance} from "../../../index";
 
 class RecipesTable extends Component {
     constructor(props) {
@@ -18,7 +18,7 @@ class RecipesTable extends Component {
     };
 
     getThings = () => {
-        return axios.get("http://localhost:8080/witcher_war_exploded/thing/things/"+this.props.isAlchemy);
+        return axiosInstance.get("/thing/things/"+this.props.isAlchemy);
     };
 
     componentDidMount() {

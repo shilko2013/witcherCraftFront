@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import './IngredientPage.css';
-import axios from "axios";
 import {Link, Redirect} from "react-router-dom";
 import connect from "react-redux/es/connect/connect";
+import {axiosInstance} from "../../../index";
 
 class IngredientPage extends Component {
     constructor(props) {
@@ -19,7 +19,7 @@ class IngredientPage extends Component {
     };
 
     getIngredient = () => {
-        return axios.get("http://localhost:8080/witcher_war_exploded/component/" + this.props.ingredientId);
+        return axiosInstance.get("/component/" + this.props.ingredientId);
     };
 
     componentDidMount() {
@@ -40,7 +40,7 @@ class IngredientPage extends Component {
     };
 
     deleteIngredient = () => {
-        return axios.post("http://localhost:8080/witcher_war_exploded/component/api/delete/" + this.props.ingredientId);
+        return axiosInstance.post("/component/api/delete/" + this.props.ingredientId);
     };
 
     deleteIngredientSubmit = () => {

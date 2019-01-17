@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import './LoginNode.css';
 import defaultImg from "../../../resources/images/defaultImg.bmp";
-import axios from 'axios';
 import connect from "react-redux/es/connect/connect";
 import {login} from "../../../actions/AuthActions";
+import {axiosInstance} from "../../../../index";
 
 class LoginNode extends Component {
     constructor(props) {
@@ -13,7 +13,7 @@ class LoginNode extends Component {
             username: '',
             password: '',
             email: '',
-            error: '',
+            error: this.props.error,
             text: this.props.text,
             wasClicked: '',
             src: props.src
@@ -41,7 +41,7 @@ class LoginNode extends Component {
             params.append('username', this.state.username);
             params.append('password', this.state.password);
 
-            axios.post('http://localhost:8080/witcher_war_exploded/login', params, {
+            axiosInstance.post('/login', params, {
                 responseType: 'text'
             }).then((response) => {
                 if (response.status === 200) {
@@ -74,7 +74,7 @@ class LoginNode extends Component {
             params.append('password', this.state.password);
             params.append('email', this.state.email);
 
-            axios.post('http://localhost:8080/witcher_war_exploded/registration', params, {
+            axiosInstance.post('/registration', params, {
                 responseType: 'text'
             }).then((response) => {
                 if (response.status === 200)
@@ -193,6 +193,7 @@ class LoginNode extends Component {
 export default connect(
     state => ({
         role: state.auth.role,
+        error: state.auth.error
     }),
     dispatch => ({
         login: (role) => {
