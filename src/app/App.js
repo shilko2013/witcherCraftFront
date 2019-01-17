@@ -19,6 +19,7 @@ import ThingAddPage from "./pages/ThingAddPage/ThingAddPage";
 import ThingEditPage from "./pages/ThingEditPage/ThingEditPage";
 import RecipeAddPage from "./pages/RecipeAddPage/RecipeAddPage";
 import AdminPage from "./pages/AdminPage/AdminPage";
+import CraftPage from "./pages/CraftPage/CraftPage";
 
 class App extends Component {
 
@@ -162,6 +163,7 @@ class App extends Component {
                     <Route path='/add/recipe' component={RecipeAddWithHeight}/>
                     <Route path='/add/draft' component={DraftAddWithHeight}/>
                     <Route path='/admin' component={AdminPage}/>
+                    <Route path='/craft' component={CraftPage}/>
                     <Route component={WelcomeWithHeight}/>
                 </Switch>
             </div>
