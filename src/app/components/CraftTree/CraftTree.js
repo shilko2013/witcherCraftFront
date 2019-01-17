@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './CraftTree.css';
 import {axiosInstance} from "../../../index";
 import { Graph } from 'react-d3-graph';
+import CraftNode from "./CraftNode/CraftNode";
 
 class CraftTree extends Component {
     constructor(props) {
@@ -55,7 +56,7 @@ class CraftTree extends Component {
             data.nodes.push({
                 id: thingId,
                 name: thing.name,
-                type: thing.typeThing.name,
+                typeThing: thing.typeThing.name,
                 price: thing.price
             });
             thing.drafts.map((draft,index) => {
@@ -74,7 +75,7 @@ class CraftTree extends Component {
                         category: component.categoryComponent.name,
                         price: component.price,
                     };
-                    if (!data.nodes.includes(componentItem))
+                    if (!data.nodes.map(elem=>elem.id).includes(componentId))
                         data.nodes.push(componentItem);
                 })
             })
@@ -124,7 +125,7 @@ class CraftTree extends Component {
         const graphConfig = {
             "automaticRearrangeAfterDropNode": false,
             "collapsible": false,
-            "directed": false,
+            "directed": true,
             "height": 400,
             "highlightDegree": 1,
             "highlightOpacity": 1,
@@ -156,19 +157,20 @@ class CraftTree extends Component {
                 "labelProperty": "id",
                 "mouseCursor": "pointer",
                 "opacity": 1,
-                "renderLabel": true,
-                "size": 200,
+                "renderLabel": false,
+                "size": 600,
                 "strokeColor": "none",
                 "strokeWidth": 1.5,
                 "svg": "",
-                "symbolType": "circle"
+                "symbolType": "circle",
+                "viewGenerator": node => <CraftNode entity={node} />
             },
             "link": {
                 "color": "#d3d3d3",
                 "highlightColor": "#d3d3d3",
                 "mouseCursor": "pointer",
                 "opacity": 1,
-                "semanticStrokeWidth": false,
+                "semanticStrokeWidth": true,
                 "strokeWidth": 1.5
             }
         };
@@ -179,7 +181,7 @@ class CraftTree extends Component {
                 </div>
                 <div className="TreeDiv">
                     {this.state.data &&
-                    <Graph id="graph" config={graphConfig} data={this.state.data}/>
+                    <Graph id="graph" config={graphConfig} data={this.state.data} on/>
                     }
                 </div>
             </div>
