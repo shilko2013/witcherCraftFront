@@ -51,7 +51,7 @@ class RecipeAddPage extends Component {
 
     render() {
         if (!this.isEditor())
-            return <Redirect push to={'/recipes'}/>;
+            return <Redirect push to={this.props.isAlchemy ? '/recipes' : '/drafts'}/>;
         return (
             <div className={this.props.asideMenuIsShow ? "RecipeAddPage" : "RecipeAddPage fullScreen"}>
                 {this.state.error &&
@@ -73,7 +73,7 @@ class RecipeAddPage extends Component {
                                name: event.target.value
                            })}/>
                     <div className="componentDiv">
-                        Названия компонентов:
+                        Названия {this.props.isAlchemy ? 'ингридиентов' : 'компонентов'}:
                         <button onClick={(event) => {
                             event.preventDefault();
                             let effects = this.state.component;

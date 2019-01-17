@@ -48,7 +48,7 @@ class Recipe extends Component {
             .then(response => {
                 this.setState({
                     ...this.state,
-                    error: 'Рецепт успешно удален'
+                    error: 'Данные успешно удалены'
                 });
             })
             .catch(error => {

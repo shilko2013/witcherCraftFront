@@ -22,16 +22,16 @@ class RecipesPage extends Component {
     return (
         <div className={this.props.asideMenuIsShow ? "RecipesPage" : "RecipesPage fullScreen"}
              style={{height: this.props.height}}>
-          <h1>Рецепты</h1>
+          <h1>{this.props.isAlchemy ? 'Рецепты' : 'Чертежи'}</h1>
           {this.isEditor() &&
           <button onClick={() => {
             this.setState({
               ...this.state,
-              redirect: '/add/recipe'
+              redirect: this.props.isAlchemy ? '/add/recipe' : '/add/draft'
             });
-          }}>Добавить рецепт</button>
+          }}>Добавить {this.props.isAlchemy ? 'рецепт' : 'чертеж'}</button>
           }
-          <RecipesTable/>
+          <RecipesTable isAlchemy={this.props.isAlchemy}/>
         </div>
     )
   }

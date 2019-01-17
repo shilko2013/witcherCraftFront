@@ -13,7 +13,7 @@ class AlchemyThingTable extends Component {
   }
 
   getThings = () => {
-    return axios.get("http://localhost:8080/witcher_war_exploded/thing/things/true");
+    return axios.get("http://localhost:8080/witcher_war_exploded/thing/things/"+this.props.isAlchemy);
   };
 
   componentDidMount() {

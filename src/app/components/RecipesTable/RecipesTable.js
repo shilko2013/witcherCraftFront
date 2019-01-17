@@ -18,7 +18,7 @@ class RecipesTable extends Component {
     };
 
     getThings = () => {
-        return axios.get("http://localhost:8080/witcher_war_exploded/thing/things/true");
+        return axios.get("http://localhost:8080/witcher_war_exploded/thing/things/"+this.props.isAlchemy);
     };
 
     componentDidMount() {
@@ -53,7 +53,7 @@ class RecipesTable extends Component {
                     <tr>
                         <th>Изображение</th>
                         <th>Название предмета</th>
-                        <th>Рецепты</th>
+                        <th>{this.props.isAlchemy ? 'Рецепты' : 'Чертежи'}</th>
                     </tr>
                     </thead>
                     <tbody>

@@ -50,7 +50,6 @@ class ThingEditPage extends Component {
         params.append('weight', this.state.weight);
         params.append('description', this.state.description);
         params.append('type', this.state.type);
-        params.append('isAlchemy', 'true');
         params.append('effects', this.state.effect);
         params.append('image', this.state.file);
         axios.post("http://localhost:8080/witcher_war_exploded/thing/api/edit", params, {

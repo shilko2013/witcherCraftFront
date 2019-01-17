@@ -22,16 +22,16 @@ class Things extends Component {
     return (
         <div className={this.props.asideMenuIsShow ? "Things" : "Things fullScreen"}
              style={{height: this.props.height}}>
-          <h1>Предметы алхимии</h1>
+          <h1>Предметы {this.props.isAlchemy ? 'алхимии' : 'ремесла'}</h1>
           {this.isEditor() &&
           <button onClick={() => {
             this.setState({
               ...this.state,
-              redirect: '/add/alchemyThing'
+              redirect: this.props.isAlchemy ? '/add/alchemyThing' : 'addThing'
             });
           }}>Добавить предмет</button>
           }
-          <AlchemyThingTable/>
+          <AlchemyThingTable isAlchemy={this.props.isAlchemy}/>
         </div>
     )
   }

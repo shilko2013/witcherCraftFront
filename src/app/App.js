@@ -88,12 +88,22 @@ class App extends Component {
         };
         const RecipesPageWithHeight = (props) => {
             return (
-                <RecipesPage height={this.state.windowHeight}/>
+                <RecipesPage isAlchemy={true} height={this.state.windowHeight}/>
+            );
+        };
+        const DraftsPageWithHeight = (props) => {
+            return (
+                <RecipesPage isAlchemy={false} height={this.state.windowHeight}/>
+            );
+        };
+        const AlchemyThingsWithHeight = (props) => {
+            return (
+                <Things isAlchemy={true} height={this.state.windowHeight}/>
             );
         };
         const ThingsWithHeight = (props) => {
             return (
-                <Things height={this.state.windowHeight}/>
+                <Things isAlchemy={false} height={this.state.windowHeight}/>
             );
         };
         const ThingPageWithId = ({match}) => {
@@ -101,19 +111,29 @@ class App extends Component {
                 <ThingPage thingId={match.params.id}/>
             );
         };
-        const ThinkAddPageWithHeight = (props) => {
+        const AlchemyThinkAddPageWithHeight = (props) => {
             return (
-                <ThingAddPage height={this.state.windowHeight}/>
+                <ThingAddPage isAlchemy={true} height={this.state.windowHeight}/>
             );
         };
-        const ThingEditPageWithId = ({match}) => {
+        const ThinkAddPageWithHeight = (props) => {
             return (
-                <ThingEditPage thingId={match.params.id}/>
+                <ThingAddPage isAlchemy={false} height={this.state.windowHeight}/>
+            );
+        };
+        const AlchemyThingEditPageWithId = ({match}) => {
+            return (
+                <ThingEditPage isAlchemy={true} thingId={match.params.id}/>
             );
         };
         const RecipeAddWithHeight = (props) => {
             return (
-                <RecipeAddPage height={this.state.windowHeight}/>
+                <RecipeAddPage isAlchemy={true} height={this.state.windowHeight}/>
+            );
+        };
+        const DraftAddWithHeight = (props) => {
+            return (
+                <RecipeAddPage isAlchemy={false} height={this.state.windowHeight}/>
             );
         };
         return (
@@ -130,12 +150,16 @@ class App extends Component {
                     <Route path='/add/ingredient' component={IngredientAddPageWithHeight}/>
                     <Route path='/add/component' component={ComponentAddPageWithHeight}/> //
                     <Route path='/recipes' component={RecipesPageWithHeight}/>
+                    <Route path='/drafts' component={DraftsPageWithHeight}/>
                     <Route path='/draft/:id' component={RecipeWithId}/>
-                    <Route path='/alchemyThings' component={ThingsWithHeight}/>
+                    <Route path='/alchemyThings' component={AlchemyThingsWithHeight}/>
+                    <Route path='/things' component={ThingsWithHeight}/>
                     <Route path='/thing/:id' component={ThingPageWithId}/>
-                    <Route path='/add/alchemyThing' component={ThinkAddPageWithHeight}/>
-                    <Route path='/edit/alchemyThing/:id' component={ThingEditPageWithId}/>
+                    <Route path='/add/alchemyThing' component={AlchemyThinkAddPageWithHeight}/>
+                    <Route path='/addThing' component={ThinkAddPageWithHeight}/>
+                    <Route path='/edit/alchemyThing/:id' component={AlchemyThingEditPageWithId}/>
                     <Route path='/add/recipe' component={RecipeAddWithHeight}/>
+                    <Route path='/add/draft' component={DraftAddWithHeight}/>
                     <Route component={WelcomeWithHeight}/>
                 </Switch>
             </div>
