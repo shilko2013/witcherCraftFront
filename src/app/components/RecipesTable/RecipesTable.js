@@ -63,7 +63,7 @@ class RecipesTable extends Component {
                             <tr>
                                 <td>
                                     <img
-                                        src={"http://localhost:15880/witcher_war_exploded/draft/" + elem.id + "/image"}/>
+                                        src={"http://localhost:15880/witcher_war_exploded/thing/" + elem.id + "/image"}/>
                                 </td>
                                 <td onClick={() => {
                                     this.setState({

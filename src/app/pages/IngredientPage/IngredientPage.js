@@ -101,9 +101,12 @@ class IngredientPage extends Component {
                         Рецепты в которых используется:
                         <br/>
                         {this.state.ingredient.drafts.map((elem, index) =>
-                            <Link to={'/draft/' + elem.id}>
-                                {elem.thing.name}
-                            </Link>
+                            <div>
+                                <Link to={'/draft/' + elem.id}>
+                                    {elem.thing.name}
+                                </Link>
+                                <br/>
+                            </div>
                         )}
                     </div>
                     }
