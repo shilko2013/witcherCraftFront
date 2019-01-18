@@ -81,7 +81,7 @@ class Recipe extends Component {
                     <button onClick={() => this.deleteDraftSubmit()}>Удалить рецепт</button>
                     }
                     <img
-                        src={"http://localhost:8080/witcher_war_exploded/thing/" + this.state.draft.id + "/image"}/>
+                        src={"http://localhost:15880/witcher_war_exploded/thing/" + this.state.draft.id + "/image"}/>
                     <div className="draftsDiv">
                         <br/>
                         Используемые компоненты:

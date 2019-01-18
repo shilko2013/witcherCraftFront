@@ -62,7 +62,7 @@ class AlchemyThingTable extends Component {
                   }}>
                     <td>
                       <img
-                          src={"http://localhost:8080/witcher_war_exploded/thing/" + elem.id + "/image"}/>
+                          src={"http://localhost:15880/witcher_war_exploded/thing/" + elem.id + "/image"}/>
                     </td>
                     <td>
                       {elem.name}

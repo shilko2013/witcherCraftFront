@@ -84,7 +84,7 @@ class IngredientPage extends Component {
                     <button onClick={() => this.deleteIngredientSubmit()}>Удалить</button>
                     }
                     <img
-                        src={"http://localhost:8080/witcher_war_exploded/component/" + this.state.ingredient.id + "/image"}/>
+                        src={"http://localhost:15880/witcher_war_exploded/component/" + this.state.ingredient.id + "/image"}/>
                     <div className="categoryDiv">
                         {this.state.ingredient.categoryComponent.name}
                     </div>

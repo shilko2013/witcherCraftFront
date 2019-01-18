@@ -96,7 +96,7 @@ class ThingEditPage extends Component {
                       }
                       }>
                     <h1>{this.state.name}</h1>
-                    <img src={"http://localhost:8080/witcher_war_exploded/thing/"+this.props.thingId+"/image"}/>
+                    <img src={"http://localhost:15880/witcher_war_exploded/thing/"+this.props.thingId+"/image"}/>
                     <div className="categoryDiv">
                         <label>Тип: </label>
                         <input required

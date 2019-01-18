@@ -24,7 +24,7 @@ store.subscribe(() => {
 export const history = createHistory();
 
 export const axiosInstance = axios.create({
-    baseURL: 'http://localhost:8080/witcher_war_exploded',
+    baseURL: 'http://localhost:15880/witcher_war_exploded',
     timeout: 2000
 });
 

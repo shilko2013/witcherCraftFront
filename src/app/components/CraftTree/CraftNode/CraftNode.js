@@ -35,7 +35,7 @@ class CraftNode extends Component {
             picture = <img src={craftImg}/>;
         else {
             picture = <img
-                src={'http://localhost:8080/witcher_war_exploded/' + this.state.classification + '/' + this.state.id + '/image'}/>;
+                src={'http://localhost:15880/witcher_war_exploded/' + this.state.classification + '/' + this.state.id + '/image'}/>;
         }
 
         return (

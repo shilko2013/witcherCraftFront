@@ -97,7 +97,7 @@ class IngredientEditPage extends Component {
                       }
                       }>
                     <img
-                        src={"http://localhost:8080/witcher_war_exploded/component/" + this.state.ingredient.id + "/image"}/>
+                        src={"http://localhost:15880/witcher_war_exploded/component/" + this.state.ingredient.id + "/image"}/>
                     <h1>{this.state.name}</h1>
                     <div className="categoryDiv">
                         <label>Категория: </label>

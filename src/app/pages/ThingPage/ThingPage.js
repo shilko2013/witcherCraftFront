@@ -85,7 +85,7 @@ class ThingPage extends Component {
                     <button onClick={() => this.deleteThingSubmit()}>Удалить предмет</button>
                     }
                     <img
-                        src={"http://localhost:8080/witcher_war_exploded/thing/" + this.state.thing.id + "/image"}/>
+                        src={"http://localhost:15880/witcher_war_exploded/thing/" + this.state.thing.id + "/image"}/>
                     <div className="categoryDiv">
                         {this.state.thing.typeThing.name}
                     </div>
